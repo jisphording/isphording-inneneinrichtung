@@ -12,5 +12,9 @@
     <?php endif ?>
   </footer>
 
+  <?php snippet('gdpr') ?>
+
+<?= js('assets/js/script.js', ['async' => true, 'defer' => true]) ?>
+
 </body>
 </html>
