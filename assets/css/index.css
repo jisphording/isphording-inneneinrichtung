@@ -1,6 +1,10 @@
 /* Color definitions: */
 .silver { color: #d2d3d6; }
 .silver-bg { background: #d2d3d6; }
+.white { color: #fafafa; }
+.white-bg { background: #fafafa; }
+.black { color: #242222; }
+.black-bg { background: #242222; }
 
 /* :root {
   --content-width: 65rem;
@@ -15,7 +19,7 @@
 }
 
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 li {
@@ -24,11 +28,10 @@ li {
 
 a {
   color: currentColor;
-  text-decoration: none;
 }
 
-strong, b {
-  font-weight: 500;
+p {
+  margin-bottom: 1rem;
 }
 
 img {
@@ -83,22 +86,27 @@ img {
   }
 }
 
-
 main {
   min-height: calc(100vh - 10rem);
+  padding: 0 1rem;
 }
 
 .intro {
   padding: 0;
   text-align: center;
-}
-
-.intro h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: bold;
   position: relative;
   margin-bottom: 1rem;
-  font-weight: 900;
-  font-size: calc(1vw + 2rem);
+  font-weight: 700;
+  font-size: calc(1vw + 1rem);
   z-index: 1;
+}
+
+.intro strong,
+.intro b {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .tags {
@@ -168,7 +176,39 @@ main {
   border: 2px solid #000;
   width: 7.5rem;
 }
-.social a:hover {
-  background: #000;
-  color: #fff;
+
+/* --------------------------------------------------------------------------- */
+/* MODAL */
+/* --------------------------------------------------------------------------- */
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto; /* Enable scroll if needed */
+  box-shadow: 0 15px 50px 50px #fafafa;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 0 auto;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
