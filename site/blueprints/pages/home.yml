@@ -1,0 +1,18 @@
+title: Home
+icon: 🏠
+
+options:
+  status: false
+
+sections:
+  info:
+    headline: Info
+    type: info
+    text: All content for the homepage is being pulled from the projects page.
+
+  projects:
+    headline: Projekte
+    extends: sections/albums
+    status: listed
+
+
