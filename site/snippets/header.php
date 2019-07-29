@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="silver-bg">
+<html lang="en" class="white-bg">
 <head>
 
   <meta charset="utf-8">
@@ -8,6 +8,7 @@
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <?= css(['assets/css/index.css', '@auto']) ?>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
