@@ -15,6 +15,11 @@ Icon
 /media/*
 # !/media/index.html
 
+# Do not track Content images
+# ---------------
+
+/content/**/*.jpg
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
