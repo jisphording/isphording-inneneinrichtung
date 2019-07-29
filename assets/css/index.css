@@ -4,7 +4,8 @@
 .white { color: #fafafa; }
 .white-bg { background: #fafafa; }
 .black { color: #242222; }
-.black-bg { background: #242222; }
+.black-bg { background: #000000; }
+.darkgray-bg { background: #1f1f1f; }
 
 /* :root {
   --content-width: 65rem;
@@ -70,10 +71,6 @@ img {
 
 .menu a {
   margin: 0;
-}
-
-.menu a[aria-current] {
-  border-bottom: 2px solid #000;
 }
 
 @media screen and (min-width: 40rem) {
@@ -152,22 +149,74 @@ main {
   width: 100%;
 }
 
+/* --------------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------------- */
+
 .footer {
-  padding: 1.5rem 5vw 10vh;
-  text-align: center;
   max-width: var(--content-width);
   margin: 0 auto;
-  line-height: 1.5em;
+  color: #6c6c6c;
 }
 .footer a {
   display: inline-block;
-  font-size: .875rem;
+  text-decoration: none;
 }
+
+.footer a#copyright {
+  color: #6c6c6c;
+}
+
 .footer > a {
   margin-bottom: 1.5rem;
   border-top: 2px solid #000;
   width: 16.5rem;
   padding-top: .5rem;
+}
+
+.footer a,
+.footer li {
+  color: #fafafa;
+}
+
+.footer .menu a {
+  display: block;
+}
+
+.footer li:first-child {
+  text-transform: uppercase;
+  color: #6c6c6c;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer li:last-child,
+.footer .menu a:last-child {
+  margin-bottom: 1rem;
+}
+
+.footer strong {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.footer-top {
+  font-family: 'Playfair Display', Georgia, serif;
+  padding: 1rem;
+}
+
+.footer-top p {
+  margin-bottom: 0;
+}
+
+.footer-top .logo {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  padding: 1rem;
 }
 
 .social a {
