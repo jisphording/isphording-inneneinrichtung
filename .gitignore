@@ -7,8 +7,13 @@ Icon
 # Temporary files
 # ---------------
 
+# Do not track Kirby CMS and Media Files in Repository
+# ---------------
+
+/kirby/*
+
 /media/*
-!/media/index.html
+# !/media/index.html
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
