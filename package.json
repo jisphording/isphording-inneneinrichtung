@@ -1,0 +1,31 @@
+{
+  "name": "isphording-inneneinrichtung",
+  "version": "1.0.0",
+  "description": "Online Presence of German Interior Design Company Isphording Inneneinrichtung GmbH",
+  "main": "index.php",
+  "dependencies": {
+    "sass": "^1.26.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchdev": "sass --watch assets/css:assets/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jisphording/isphording-inneneinrichtung.git"
+  },
+  "keywords": [
+    "interior",
+    "design",
+    "architecture",
+    "fabrics",
+    "furniture"
+  ],
+  "author": "Johannes Isphording",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jisphording/isphording-inneneinrichtung/issues"
+  },
+  "homepage": "https://github.com/jisphording/isphording-inneneinrichtung#readme"
+}
