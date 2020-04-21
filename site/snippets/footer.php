@@ -44,7 +44,7 @@
     </section>
   </footer>
 
-  <?php snippet('gdpr') ?>
+  <?php snippet('cookies') ?>
 
 <?= js('assets/js/script.js', ['async' => true, 'defer' => true]) ?>
 
