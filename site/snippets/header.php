@@ -7,7 +7,7 @@
 
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
-  <?= css(['assets/css/index.css', '@auto']) ?>
+  <?= css(['assets/dist/index.css']) ?>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 
 </head>
