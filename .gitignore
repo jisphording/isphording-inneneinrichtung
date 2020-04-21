@@ -4,14 +4,21 @@
 Icon
 .DS_Store
 
-# Temporary files
+# Files meant for development only
 # ---------------
+
+/node_modules/*
+/*lock.json
+
+# Data that is only meant for deployment
+# ---------------
+
+/assets/dist/*
 
 # Do not track Kirby CMS and Media Files in Repository
 # ---------------
 
 /kirby/*
-
 /media/*
 # !/media/index.html
 
@@ -23,6 +30,8 @@ Icon
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
+
+/.htaccess
 
 # Cache Files
 # ---------------
