@@ -9,22 +9,25 @@ Icon
 
 /node_modules/*
 /*lock.json
+/TODO.md
 
 # Data that is only meant for deployment
 # ---------------
-
-/assets/dist/*
+/.cache
+/dist/*
 
 # Do not track Kirby CMS and Media Files in Repository
 # ---------------
 
 /kirby/*
 /media/*
+/assets/img/*.jpg
 # !/media/index.html
 
 # Do not track Content images
 # ---------------
 
+/favicon.ico
 /content/**/*.jpg
 
 # -------------SECURITY-------------
