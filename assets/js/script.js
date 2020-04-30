@@ -29,3 +29,22 @@ if ( userHasVisited == "yes" ) {
 
 // Set a flag that user has visited the site before
 localStorage.setItem('visited', 'yes');
+
+// MENU FULLSCREEN //
+// -------------------------------------------------------------------------------- //
+const imagesLoaded = require('imagesloaded');
+import Navigation from "./modules/navigation";
+
+// Preload images
+const preloadImages = () => {
+    return new Promise((resolve, reject) => {
+        imagesLoaded(document.querySelectorAll('.screen'), {background: true}, resolve);
+    });
+};
+
+// Preload fonts and images
+Promise.all([preloadImages()]).then(() => {
+    new Navigation(document.querySelector('.menu'));
+    // Remove loader (loading class)
+    document.body.classList.remove('loading');
+});
