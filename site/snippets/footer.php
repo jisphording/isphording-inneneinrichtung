@@ -46,7 +46,7 @@
 
   <?php snippet('cookies') ?>
 
-<?= js('assets/js/script.js', ['async' => true, 'defer' => true]) ?>
+<?= js('dist/script.js', ['async' => false]) ?>
 
 </body>
 </html>
