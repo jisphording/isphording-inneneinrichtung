@@ -11,7 +11,7 @@
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <?= css(['dist/index.css']) ?>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
 </head>
@@ -19,7 +19,7 @@
 
   <div class="page">
     <header class="header">
-	  <!-- <a class="logo" href="<= $site->url() ?>"><= $site->title() ?></a> -->
+	  <a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-dark.png"></a>
 
 	  	<div class="menu__fake">
 			  <p>Men&uuml;</p>
@@ -53,9 +53,8 @@
 				<nav id="menu" class="menu">
 					<?php foreach ($site->children()->listed() as $item): ?>
 						<span class="menu__item" href="#">
-							<span class="menu__item-tag">Besuchen Sie</span>
-								<a class="menu__item-link" href="<?= $item->url() ?>"><?= $item->title() ?></a>
-							</span>
+							<a class="menu__item-link" href="<?= $item->url() ?>"><?= $item->title() ?></a>
+						</span>
 					<?php endforeach ?>
 				</nav>	
 			</div>
