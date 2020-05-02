@@ -21,7 +21,7 @@ Icon
 
 /kirby/*
 /media/*
-/assets/img/*.jpg
+/assets/img/*
 # !/media/index.html
 
 # Do not track Content images
