@@ -14,7 +14,6 @@ export default class Navigation {
         // make the fake menu "clickable", so that the user can access the fullscreen navigation on click/hover
         var menuFake = document.querySelectorAll('.menu__fake');
         menuFake[0].addEventListener('click', this.showMenu);
-        menuFake[0].addEventListener('mouseenter', this.showMenu);
     }
     showMenu() {
         document.querySelectorAll('.menu__fullscreen')[0].style.display = "block";
