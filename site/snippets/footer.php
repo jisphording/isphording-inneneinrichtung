@@ -7,7 +7,7 @@
       <img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-dark.png">
     </section>
 
-    <section class="footer-bottom black-bg">
+    <section class="footer-navigation black-bg">
     <?php if ($contact = page('contact')): ?>
       <ul>
         <ul>
@@ -39,8 +39,18 @@
         </ul>
       </ul>
       <?php endif ?>
+    </section>
 
-      <a id="copyright" href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
+    <section class="footer-bottom silver-bg">
+      <p>Wir sind spezialisiert auf die Fertigung <strong>individueller Einzelstücke</strong> und die Innenausstattung mit hochwertigen und <strong>exklusiven Stoffen.</strong></p>
+
+      <img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+
+      <div class="copyright">
+        <p>Crafted <a class="date" href="<?= url() ?>"> <?= date('Y') ?></a> by <a href="http://studioisphording.com/">Studio Isphording</a></p>
+        <span>Alle Rechte Vorbehalten</span>
+        <span class="trademark">&copy;</span>
+      </div>
     </section>
   </footer>
 
