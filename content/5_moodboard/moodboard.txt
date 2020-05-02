@@ -1,13 +1,5 @@
-Headline: Project Description
-
-----
-
-Description: A discriptive Text
-
-----
-
-Tags: tree, forest
-
-----
-
 Title: Moodboard
+
+----
+
+Intro: Ideen, Moodboard

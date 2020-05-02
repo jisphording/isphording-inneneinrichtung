@@ -1,11 +1,3 @@
-Headline: Project Description
-
-----
-
-Text: A discriptive Text
-
-----
-
 Address:
 
 Mainstraße 125
@@ -41,3 +33,7 @@ Germany
 ----
 
 Title: Kontakt  
+
+----
+
+Intro: Kontakt., Hier finden, Sie uns

@@ -1,13 +1,5 @@
-Headline: Project Description
-
-----
-
-Description: A discriptive Text
-
-----
-
-Tags: tree, forest
-
-----
-
 Title: Projekte
+
+----
+
+Intro: Projekt:, Privathaus am, Elvekumer Feld

@@ -1,13 +1,5 @@
-Headline: Project Description
-
-----
-
-Description: A discriptive Text
-
-----
-
-Tags: tree, forest
-
-----
-
 Title: Services
+
+----
+
+Intro: Service., Was wir für, Sie tun können
