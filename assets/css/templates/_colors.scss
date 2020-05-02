@@ -1,0 +1,17 @@
+/* Color Definitions */
+:root {
+    --color-silver: #d2d3d6; 
+    --color-white: #fafafa;
+    --color-black: #0f0e0e; 
+    --color-darkgray: #1f1f1f;
+
+    --color-bg-silver-light: #e0e1e2;
+    --color-bg-silver: #9e9e9e;
+    --color-bg-black: #0f0e0e;
+    --color-bg-darkgray: #141414;
+}  
+
+.silver-bg-light { background: var(--color-bg-silver-light); }
+.silver-bg { background: var(--color-bg-silver); }
+.black-bg { background: var(--color-bg-black); }
+.darkgray-bg { background: var(--color-bg-darkgray); }
