@@ -1,8 +1,7 @@
 <?php snippet('header') ?>
 
 <main>
-  <header class="intro">
-  </header>
+  <?php snippet('intro-amp') ?>
 
   <?php foreach( $page -> images() as $file ): ?>
     <img src="<?= $file -> url() ?>">
