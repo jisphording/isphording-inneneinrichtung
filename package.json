@@ -10,13 +10,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/*",
-    "build": "npm run clean && npm run build:parcel && npm run build:sass && npm run webp",
+    "build": "npm run clean && npm run build:parcel && npm run build:sass && npm run imagemin",
     "build:sass": "sass assets/css:dist",
     "build:parcel": "parcel build assets/js/script.js -d dist --no-minify --no-source-maps --public-url /assets",
     "watch": "concurrently --kill-others \"npm run watch:sass\" \"npm run watch:parcel\"",
     "watch:sass": "sass --watch assets/css:dist",
     "watch:parcel": "parcel watch assets/js/script.js -d dist /assets",
-    "webp": "imagemin --plugin.webp.quality=85 --plugin.webp.preset=photo --plugin.webp.method=6 --plugin.webp.metadata=icc assets/img/* --out-dir=dist/img"
+    "imagemin": "node utils/imagemin.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,8 @@
   "homepage": "https://github.com/jisphording/isphording-inneneinrichtung#readme",
   "devDependencies": {
     "concurrently": "^5.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-keep-folder": "^5.3.2",
     "imagemin-webp": "^5.1.0",
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
