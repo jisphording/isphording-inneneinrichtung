@@ -29,6 +29,8 @@ Icon
 
 /favicon.ico
 /content/**/*.jpg
+/content/**/*.webp
+/content/**/*.png
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
