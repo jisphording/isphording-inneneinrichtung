@@ -49,7 +49,12 @@ a {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -66,13 +71,16 @@ main {
   padding: 0;
 }
 
+/* --------------------------------------------------------------------------- */
+/* INTRO & MOOD */
+/* --------------------------------------------------------------------------- */
+
 .intro {
   padding: 1rem;
   padding-top: 5rem;
   padding-bottom: 3rem;
   font-family: var(--font-main-serif);
   position: relative;
-  margin-bottom: 1rem;
   z-index: 1;
   color: var(--color-white);
 }
@@ -80,6 +88,27 @@ main {
 .intro .color-inverted {
   color: var(--color-black);
 }
+
+.intro__emblem {
+  display: none;
+}
+
+.mood__claim {
+  text-align: center;
+  font-family: var(--font-main-serif);
+  font-weight: 900;
+  line-height: calc(3vw + 0.75rem);
+  font-size: calc(1vw + 1rem);
+  padding: 1rem .5rem;
+}
+
+.mood__claim em {
+  font-family: var(--font-main-sans);
+}
+
+/* --------------------------------------------------------------------------- */
+/* OTHER */
+/* --------------------------------------------------------------------------- */
 
 .tags {
   text-align: center;
