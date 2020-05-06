@@ -19,11 +19,14 @@
 
   <div class="page">
     <header class="header">
-	  <a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-light.png"></a>
 
-	  	<div class="menu__fake">
-			  <p>Men&uuml;</p>
-		</div>
+		<section id="navbar" class="navbar">
+			<a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-light.png"></a>
+
+			<div class="menu__fake">
+					<p>Men&uuml;</p>
+			</div>
+		</section>
 
 		<div class="menu__fullscreen">
 			<div class="screens" aria-hidden="true">

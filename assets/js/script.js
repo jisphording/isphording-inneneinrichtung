@@ -30,6 +30,29 @@ if ( userHasVisited == "yes" ) {
 // Set a flag that user has visited the site before
 localStorage.setItem('visited', 'yes');
 
+// NAVBAR HIDE ON SCROLL //
+// -------------------------------------------------------------------------------- //
+window.onscroll = function(e) {
+
+  // On a freshly loaded page you have a bit of inertia
+  if (this.scrollY > 200) {
+    var that = this;
+    hideOnScroll(that);
+  }
+
+  function hideOnScroll(el) {
+    // Scrolling down hides the scrollbar
+    if (el.oldScroll > el.scrollY) {
+      document.getElementById('navbar').style.top="0";
+
+    // Scrolling back up makes the Navbar visible again
+    } else {
+      document.getElementById('navbar').style.top="-20rem";
+    };
+    el.oldScroll = el.scrollY;
+  }
+}
+
 // MENU FULLSCREEN //
 // -------------------------------------------------------------------------------- //
 const imagesLoaded = require('imagesloaded');

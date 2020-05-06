@@ -1,4 +1,42 @@
+@use 'colors';
 @use 'typography';
+
+/* FIXED NAVBAR & FAKE MENU */
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	z-index: 999;
+	background: var(--color-silver-light)
+} 
+
+.menu__fake,
+.header .logo {
+	z-index: 99999;
+	float: right;
+}
+
+.header .logo {
+	float: left;
+	width: 50%;
+}
+
+.menu__fake p {
+	font-family: --font-main-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu__fake:hover p {
+	cursor: pointer;
+	color: --color-silver;
+	transition: color 0.2s;
+}
+
+/* FULLSCREEN MENU */
 
 .screens, 
 .screen__item, 
@@ -50,33 +88,6 @@
 
 .menu__fullscreen {
 	display: none;
-}
-
-.menu__fake,
-.header .logo {
-	position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 99999;
-}
-
-.header .logo {
-	left: 1rem;
-	width: 50%;
-}
-
-.menu__fake p {
-	margin: 0;
-	padding: .5em .75em;
-	font-family: --font-main-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.menu__fake:hover p {
-	cursor: pointer;
-	color: --color-silver;
-	transition: color 0.2s;
 }
 
 .menu {
