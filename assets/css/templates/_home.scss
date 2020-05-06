@@ -26,7 +26,7 @@ figcaption .caption {
 .project__subtitle {
   font-family: var(--font-main-sans);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.85rem;
 }
 
 .project__synopsis {
@@ -35,14 +35,14 @@ figcaption .caption {
 }
 
 .project__description {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* CSS GRID */
+/* CSS GRID IMAGES  */
 
-.grid__container {
+.grid__container--images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
   grid-gap: 0;
@@ -50,21 +50,71 @@ figcaption .caption {
   /* gap: 1rem */
 }
 
-.grid__item {
+.grid__item--image {
   grid-row: span 1;
 }
 
-.projects li:nth-child(odd) .grid__item:first-child {
+.projects .grid__image {
+  height: 50vw;
+}
+/* CSS GRID TEXT  */
+
+.grid__item--headline,
+.grid__item--bodycopy {
   grid-column: span 1;
 }
 
-.projects li:nth-child(even) .grid__item:first-child {
+/* MEDIA QUERIES */
+
+.projects li:nth-child(even) .grid__item--image:first-child {
   grid-column: span 2;
 }
 
-.grid__image {
-  width: 100%;
-  height: 100%;
-  height: 30vw;
-  object-fit: cover;
+@media only screen and (min-width: 480px) {
+  .projects .grid__image {
+    height: 35vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects li:nth-child(odd) .grid__item--image:first-child {
+    grid-column: span 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grid__container--text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
+
+  .grid__item--headline {
+    grid-column: span 2;
+  }
+
+  .grid__item--bodycopy {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid__container--images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .projects .grid__image {
+    height: 30vw;
+}
+
+  .projects li:nth-child(odd) .grid__item--image {
+    grid-column: span 2;
+  }
+  
+  .projects li:nth-child(even) .grid__item--image:first-child {
+    grid-column: span 2;
+  }  
 }
