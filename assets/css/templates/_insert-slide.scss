@@ -1,0 +1,109 @@
+/* --------------------------------------------------------------------------- */
+/* INSERT SLIDE */
+/* --------------------------------------------------------------------------- */
+
+.insert-slide {
+  border-top: 1px solid var(--color-silver-light);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 0;
+  font-family: var(--font-main-serif);
+}
+
+.insert-slide h2 {
+  font-weight: 400;
+  line-height: calc(3vw + 0.75rem);
+  font-size: calc(1vw + 1rem);
+  padding: 2rem 0;
+}
+
+.grid__container--text__insertSlide {
+  padding-left: 1rem;
+}
+
+.insert-slide h2 em {
+  color: var(--color-silver);
+}
+
+.insert-slide .column--01,
+.insert-slide .column--02 {
+  margin-bottom: 1rem;
+  padding-right: .5rem;
+}
+
+.insert-slide .column--01 {
+  color: var(--color-silver);
+}
+
+.insert-slide .emblem {
+  width: 30%;
+  margin-top: 1.5rem;
+  margin-left: calc(35% - 1rem);
+  margin-right: calc(35% + 1rem);
+}
+
+@media screen and (min-width: 480px) {
+  .insert-slide .emblem {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__item--bodycopy__insertSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
+
+  .insert-slide h2 {
+      margin: 0 auto;
+      width: 80%;
+  }
+
+  .insert-slide .column--01,
+  .insert-slide .column--02 {
+    grid-column: span 1;
+    padding-right: 1rem;
+  }
+
+  .insert-slide .emblem {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .insert-slide h2 {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .grid__container--text__insertSlide {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    .grid__item--headline__insertSlide {
+        grid-column: span 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        margin-top: 2rem;
+    }
+
+    .grid__item--bodycopy__insertSlide {
+        grid-column: span 4;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+
+    .insert-slide h2 {
+        width: 100%;
+    }
+
+    .insert-slide .column--01,
+    .insert-slide .column--02 {
+        grid-column: span 1;
+     }
+}
