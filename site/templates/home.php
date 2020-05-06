@@ -13,7 +13,7 @@
     <ul>
       <?php foreach(page('projects')->children()->published()->limit(4) as $project): ?>
       <li>
-        <div class="grid__container">
+        <div class="grid__container--images">
           <!-- Since at the moment kirby serves allfiletypes found we wrap everything in a PHP function that checks for the image type and then filters out everything that is not webp -->
           <?php foreach( $project -> images() as $file ): ?>
               
@@ -22,7 +22,7 @@
 
               if ($extension == 'webp') {
                 $file_webp = $file -> url(); ?>
-                <figure class="grid__item">
+                <figure class="grid__item grid__item--image">
                 <img class="grid__image" src="<?php echo $file_webp ?>" alt="<?= $project->title() ?>">
 
                 <figcaption>
@@ -35,16 +35,22 @@
           <?php endforeach ?>
         </div>
 
-        <h2 class="project__title"><?= $project->title() ?></h2>
-        <h2 class="project__subtitle"><?= $project->subtitle() ?></h2>
-
-        <p class="project__synopsis"><?= $project->synopsis() ?></p>
-        <p class="project__description"><?= $project->description() ?></p>
+        <div class="grid__container--text">
+          <div class="grid__item grid__item--headline">
+            <h2 class="project__title"><?= $project->title() ?></h2>
+            <h2 class="project__subtitle"><?= $project->subtitle() ?></h2>
+          </div>
+          <div class="grid__item grid__item--bodycopy">
+            <p class="project__synopsis"><?= $project->synopsis() ?></p>
+            <p class="project__description"><?= $project->description() ?></p>
+          </div>
 
       </li>
       <?php endforeach ?>
   </ul>
   </section>
+
+  <?php snippet('insert-slide') ?>
   
 </main>
 
