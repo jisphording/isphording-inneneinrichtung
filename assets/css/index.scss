@@ -114,6 +114,13 @@ main {
   font-family: var(--font-main-sans);
 }
 
+@media screen and (min-width: 640px) {
+  .intro {
+    padding-top: calc(4vw + 6rem);
+    padding-bottom: calc(4vw + 3rem);
+  }
+}
+
 /* --------------------------------------------------------------------------- */
 /* OTHER */
 /* --------------------------------------------------------------------------- */
