@@ -51,6 +51,8 @@
   </section>
 
   <?php snippet('insert-slide') ?>
+
+  <?php snippet('insert-readmore') ?>
   
 </main>
 
