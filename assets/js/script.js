@@ -71,3 +71,8 @@ Promise.all([preloadImages()]).then(() => {
     // Remove loader (loading class)
     document.body.classList.remove('loading');
 });
+
+// ANIMATED BACKGROUND NOISE CANVAS //
+// -------------------------------------------------------------------------------- //
+import Noise from "./modules/noise";
+new Noise('insert-readmore__grain', 8);
