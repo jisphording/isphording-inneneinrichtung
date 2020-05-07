@@ -1,0 +1,55 @@
+/* --------------------------------------------------------------------------- */
+/* INSERT READ MORE */
+/* --------------------------------------------------------------------------- */
+
+/* Padding & Line height */
+:root {
+    --insert-readmore-lineheight: calc(3vw + 1rem);
+}
+
+.insert-readmore {
+    background-color: var(--color-beige-light);
+    padding: var(--insert-readmore-lineheight) 1.5rem;
+}
+
+.insert-readmore .column01,
+.insert-readmore .column02 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.insert-readmore .column02 {
+    font-weight: 600;
+    font-family: var(--font-main-serif);
+    line-height: var(--insert-readmore-lineheight);
+    font-size: calc(3vw + 1rem);
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.insert-readmore em {
+    width: 100%;
+    color: var(--color-silver-medium);
+}
+
+@media screen and (min-width: 768px) {
+    .insert-readmore {
+        display: flex;
+    }
+
+    .insert-readmore .column01 {
+        width: 30%;
+        margin-right: 0;
+        line-height: var(--insert-readmore-lineheight);
+    }
+
+    .insert-readmore .column02 {
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .insert-readmore .column01 p {
+        padding-bottom: .25rem;
+        border-bottom: 1px solid var(--color-silver-medium);
+    }
+}
