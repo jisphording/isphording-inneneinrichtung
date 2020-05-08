@@ -9,8 +9,9 @@
 	<?php 
 		// an array to store all the images in to make it easier to place rthem in various parts of the template  
 		$images_ar = NULL;
+		$currentpage = $page->children()->find('project-5');
 
-		foreach($page->children()->find('project-5')->images() as $file ):
+		foreach($currentpage->images() as $file ):
               
 			$extension = $file->extension();
 			
@@ -37,6 +38,39 @@
 
 	<section class="mood__image">
 		<?php unshift_image($images_ar); ?>
+	</section>
+
+	<section class="grid__container grid__container--project__details">
+		<div class="details__emblem">
+			<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+		</div>
+		<div class="project__details--content">
+			<ul class="grid__container">
+				<li class="grid__item grid__item--headline">
+					<h2 class="project__title"><?= $currentpage->Details()->kirbytext() ?></h2>
+				</li>
+				<li class="grid__item grid__item--entry">
+					<p class="project__details">Projekttitel</p>
+					<p class="project__details"><?= $currentpage->DetailsProjecttitle()->kirby() ?></p>
+				</li>
+				<li class="grid__item grid__item--entry">
+					<p class="project__details">Realisiert</p>
+					<p class="project__details"><?= $currentpage->DetailsRealised()->kirby() ?></p>
+				</li>
+				<li class="grid__item grid__item--entry">
+					<p class="project__details">Kunde</p>
+					<p class="project__details"><?= $currentpage->DetailsClient()->kirby() ?></p>
+				</li>
+				<li class="grid__item grid__item--entry">
+					<p class="project__details">Fl&auml;che des Objekts</p>
+					<p class="project__details"><?= $currentpage->DetailsSize()->kirby() ?></p>
+				</li>
+				<li class="grid__item grid__item--entry">
+					<p class="project__details">Hauptt&auml;tigkeit</p>
+					<p class="project__details"><?= $currentpage->DetailsJob()->kirby() ?></p>
+				</li>
+			</ul>
+		</div>
 	</section>
 			
 	<?php
