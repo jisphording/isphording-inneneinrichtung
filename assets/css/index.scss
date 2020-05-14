@@ -61,9 +61,10 @@ figure {
   padding: 0;
 }
 
-img {
+img,
+figure {
   width: 100%;
-  display: block; // to remove the small gap when there's whitespace between twi image tags
+  display: block; // to remove the small gap when there's whitespace between image tags
 }
 
 .page > * {
