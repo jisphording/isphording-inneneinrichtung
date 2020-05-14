@@ -17,7 +17,7 @@
 </head>
 <body class="loading">
 
-  <div class="page">
+  <div class="page <?= $page->uri() ?>">
     <header class="header">
 
 		<section id="navbar" class="navbar">
