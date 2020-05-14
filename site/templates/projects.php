@@ -113,13 +113,54 @@
 			</ul>
 		</div>
 	</section>
-			
-	<?php
-	$images_ar_length = count($images_ar);
-	for ($i = 0; $i < $images_ar_length; $i++) {
-		unshift_image($images_ar);	
-	} 
-	?>
+
+	<section class="project__text--longform">
+		<?php 
+		// Checking how many chapters there are on the project page
+		$projecttext_ar_length = count($projecttext_ar);
+		$projecttext_chapters_placed = 0;
+
+		// PHP HELPER FUNTION
+		// -> Placing a number of images from a given array where the images are stored
+		function place_images(&$el, $amount) {
+			?><section class="grid__container--images"><?php
+			for ($i = 0; $i < $amount; $i++) {
+				unshift_image($el);	
+			}
+			?></section><?php
+		}	 
+		
+		// SWITCH CASE
+		// -> Going through the parsed kirbytext array to place contents chapter by chapter and automatically add an accompanying image triplet. For the moment this is implemented with a rather clunky if/else switch, but it will possibly refactored into a more elegeant solution further down the road
+
+		for ($i = 0; $i < $projecttext_ar_length; $i++) {
+			// First check if we are on the first chapter by checking if $projecttext_ar_length has been reduced
+			if ($projecttext_chapters_placed == 0) {
+				unshift_projecttext($projecttext_ar); 
+				unshift_projecttext($projecttext_ar); 
+				$projecttext_chapters_placed = $projecttext_chapters_placed + 2;
+
+				place_images($images_ar, 3);
+
+			// Then check if the first chapter was already placed. If so, we just post another three images without any text 
+			} elseif ($projecttext_chapters_placed == 2) {
+				$projecttext_chapters_placed += 1;
+				place_images($images_ar, 3);
+
+			// Now the first chapter and two image triplets have been placed, so we just post a chapter text without any images
+			} elseif ($projecttext_chapters_placed == 3) {
+				$projecttext_chapters_placed += 1;
+				unshift_projecttext($projecttext_ar);
+
+			// And if there is still content to be placed we just use a chapter-and-images block until everything has been placed onto the site
+			} else {
+				$projecttext_chapters_placed += 1;
+				unshift_projecttext($projecttext_ar);
+				place_images($images_ar, 3);
+			}
+		}
+		?>
+	</section>
 	
 </main>
 
