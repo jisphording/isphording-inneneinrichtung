@@ -3,7 +3,7 @@
 <main>
 	<?php snippet('intro') ?>
 
-	<!-- ALL IMAGES OF PAGE TO ARRAY ->
+	<!-- ALL IMAGES OF PAGE TO ARRAY -->
 
   	<!-- Since at the moment kirby serves allfiletypes found we wrap everything in a PHP function that checks for the image type and then filters out everything that is not webp -->
 	<?php 
@@ -30,9 +30,50 @@
 				// Do nothing, because array is empty and/or all images are already placed
 			} else {				
 
-				?><img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>"><?php
+				?><figure class="grid__item grid__item--image">
+					<img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>">
+
+					<figcaption>
+						<span class="title"><p><?= $el[0]->content()->title() ?></p></span>
+						<span class="caption"><p><?= $el[0]->content()->caption() ?></p></span>
+					</figcaption>
+				</figure>
+				<?php
 				array_shift($el);
 			}	
+		}
+	?>
+
+	<!-- PROJECT PAGE TEXT TO ARRAY -->
+
+  	<!-- Splitting all the kirbytext content up into chunks which are loaded into an array for finer control over the placement on the site. The Delimiter for the next array section is the <h2> tag -->
+	  <?php 
+	  	// loading the kirbytext of the project page
+		$projecttext = $currentpage->ProjectPageText()->kirbytext();
+		
+		// Splitting the text up into various chunks by use of the <h2> Tag as a chapter marker. 
+		// If simply splitting by /<h2>/, the tag disappears, so we need '/(?=<h2>)/' to tell PHP to keep the tag intact
+		$projecttext_ar = preg_split('/(?=<h2>)/', $projecttext, -1, PREG_SPLIT_NO_EMPTY);
+
+		// Now we have everything in an array with the following structure
+		// [0] <h1>
+		// [1] <h2><p><p>
+		// [2] <h2><p><p> 
+		// etc.
+
+		// PHP HELPER FUNCTION:
+		// This function takes a kirbytext object and can be called in this template to place the first chapter from the object along with it's meta information and then remove it from the array to avoid duplication
+		// -> the '&' infront of the variable is used to pass a reference to the variable instead of a copy
+		function unshift_projecttext (&$el) {
+			// First, we check if the array actually contains any text
+			if (empty($el)) {
+				// Do nothing, because array is empty and/or all text is already placed
+			} else {
+				?><section class="project__text project__text--chapter"><?php
+					print($el[0]);
+					array_shift($el);
+				?></section><?php
+			}
 		}
 	?>
 
