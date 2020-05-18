@@ -1,0 +1,57 @@
+/* --------------------------------------------------------------------------- */
+/* INSERT OTHER PROJECTS */
+/* --------------------------------------------------------------------------- */
+.insert-other-projects__headline {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: .5rem;
+    padding-top: .5rem;
+}
+
+.insert-other-projects .projects ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0; 
+}
+
+.insert-other-projects .project__subtitle {
+    margin: 0;
+}
+
+.insert-other-projects .project__synopsis {
+    color: var(--color-black);
+}
+
+@media only screen and (min-width: 480px) {
+    .insert-other-projects .projects ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .insert-other-projects .projects li {
+        grid-column: span 1;
+    }
+
+    .insert-other-projects figure {
+        padding: .5rem;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .insert-other-projects .projects ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .grid__container--text,
+    .grid__item--bodycopy {
+        display: block;
+    }
+
+    .insert-other-projects .project__subtitle,
+    .insert-other-projects .grid__item--bodycopy {
+        margin-bottom: 1.85rem;
+    }
+
+    .insert-other-projects .project__synopsis {
+        padding-right: 0;
+    }
+} 
