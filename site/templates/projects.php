@@ -11,14 +11,13 @@
 		$images_ar = NULL;
 		$currentpage = $page->children()->find('project-5');
 
-		foreach($currentpage->images() as $file ):
-              
-			$extension = $file->extension();
-			
-			if ($extension == 'webp') {
-				$images_ar[] = $file;
-			}
+		// FILTERING THE IMAGES
 
+		// make use of kirbys filter function to load web optimized images for all images of the site
+		$images = $currentpage->images()->filterBy('extension', 'webp');
+
+		foreach($images as $file ):
+			$images_ar[] = $file;
 		endforeach;
 
 		// PHP HELPER FUNCTION:
