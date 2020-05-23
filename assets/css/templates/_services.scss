@@ -1,0 +1,41 @@
+/* --------------------------------------------------------------------------- */
+/* SERVICES PAGE */
+/* --------------------------------------------------------------------------- */
+
+.services .grid__item--entry {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.services .details__emblem {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.services .grid__container {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-silver-light);
+}
+
+.services .grid__container:last-of-type {
+    border-bottom: none;
+}
+
+.services .grid__container .number {
+    font-family: var(--font-main-serif);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-darkgray);
+}
+
+.services .grid__item--headline {
+    text-transform: uppercase;
+}
+
+.services .service__title--01 {
+    color: var(--color-silver);
+}
