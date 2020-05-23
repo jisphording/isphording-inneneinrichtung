@@ -41,7 +41,7 @@
 <?php snippet('introMood') ?>
 
 <section class="mood__claim">
-	<?= $page -> Claim() -> kirbytext() ?>
+	<?= $page -> Claim() -> kirby() ?>
 </section>
 
 	<section class="project__text--longform">
