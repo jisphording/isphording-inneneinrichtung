@@ -65,82 +65,100 @@
 		?>
 	</section>
 
-	<section class="grid__container grid__container--project__details">
-		<div class="project__details--content">
+	<!-- SERVICE ITEMS LIST -->
+
+	<?php // SPLITTING HEADLINE HELPER FUNCTION
+	// TODO: At the moment this function is used only for headlines, but it coult probably be built in a more flexible way to be used for other text fields with automatic tag recognition etc. 
+
+	function split_txt($text_field, $delimiter) {
+		// pass delimiter and string to explode function to split at commas
+		$text_ar = explode($delimiter, $text_field); 
+		$length = count($text_ar); // getting the array length after the split
+
+		for ($i = 0; $i < $length; $i += 1) {
+			echo '<h2 class="service__title--0' . $i . '">';
+				echo $text_ar[$i];
+			echo '</h2>';
+		};
+	} ?>
+
+	<section class="grid__container grid__container--service__details">
 		<!-- TODO: The building of the following list should be refactored into a neat loop -->
-			<!-- Service List 01 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service01Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service01Text()->kirby() ?></p>
-				</li>
-			</ul>
-			<!-- Service List 02 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service02Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service02Text()->kirby() ?></p>
-				</li>
-			</ul>
-			<!-- Service List 03 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service03Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service03Text()->kirby() ?></p>
-				</li>
-			</ul>
-			<!-- Service List 04 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service04Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service04Text()->kirby() ?></p>
-				</li>
-			</ul>
-			<!-- Service List 05 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service05Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service05Text()->kirby() ?></p>
-				</li>
-			</ul>
-			<!-- Service List 06 -->
-			<ul class="grid__container">
-				<li class="details__emblem">
-					<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
-				</li>
-				<li class="grid__item grid__item--headline">
-					<h2 class="project__title"><?= $page->Service06Titel()->kirbytext() ?></h2>
-				</li>
-				<li class="grid__item grid__item--entry">
-					<p class="project__details"><?= $page->Service06Text()->kirby() ?></p>
-				</li>
-			</ul>
-		</div>
+		<!-- Service List 01 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>1</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service01Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service01Text()->kirby() ?></p>
+			</li>
+		</ul>
+		<!-- Service List 02 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>2</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service02Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service02Text()->kirby() ?></p>
+			</li>
+		</ul>
+		<!-- Service List 03 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>3</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service03Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service03Text()->kirby() ?></p>
+			</li>
+		</ul>
+		<!-- Service List 04 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>4</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service04Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service04Text()->kirby() ?></p>
+			</li>
+		</ul>
+		<!-- Service List 05 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>5</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service05Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service05Text()->kirby() ?></p>
+			</li>
+		</ul>
 	</section>
 	
 </main>
