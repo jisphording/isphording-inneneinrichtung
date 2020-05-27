@@ -59,10 +59,8 @@
 			?></section><?php
     }	 
 
-    // Actually Placing Images
-    place_images($images_ar);
-
-		?>
+    // Placing the first half of the images
+    place_images($images_ar, 3); ?>
 	</section>
 
 	<!-- SERVICE ITEMS LIST -->
@@ -159,6 +157,11 @@
 				<p class="service__details"><?= $page->Service05Text()->kirby() ?></p>
 			</li>
 		</ul>
+	</section>
+
+	<section class="project__text--longform">
+		<?php // Placing the other half of the images
+		place_images($images_ar); ?>
 	</section>
 	
 </main>
