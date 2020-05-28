@@ -235,6 +235,12 @@
         column-span: 1;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer-top {
+        padding-top: 1.5rem;
+    }
+}
   
 @media screen and (min-width: 1280px) {
     .footer-bottom .emblem { 
