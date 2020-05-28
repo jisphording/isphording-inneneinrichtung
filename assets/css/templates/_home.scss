@@ -64,6 +64,10 @@ figcaption .caption {
   grid-column: span 1;
 }
 
+.grid__item--headline {
+  margin-top: 1.75rem;
+}
+
 /* MEDIA QUERIES */
 
 .projects li:nth-child(even) .grid__item--image:first-child {
