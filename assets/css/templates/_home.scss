@@ -12,8 +12,7 @@ figcaption .caption {
 
 .project__title,
 .project__subtitle,
-.project__synopsis,
-.project__description {
+.project__synopsis {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -32,10 +31,6 @@ figcaption .caption {
 .project__synopsis {
   color: var(--color-silver);
   margin-bottom: 1rem;
-}
-
-.project__description {
-  margin-bottom: 2rem;
 }
 
 /* CSS GRID IMAGES  */
