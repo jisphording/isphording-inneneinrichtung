@@ -40,9 +40,9 @@
             <h2 class="project__title"><?= $project->title() ?></h2>
             <h2 class="project__subtitle"><?= $project->subtitle() ?></h2>
           </div>
-          <div class="grid__item grid__item--bodycopy">
+          <div class="grid__item grid__item--bodycopy project__text">
             <p class="project__synopsis"><?= $project->synopsis() ?></p>
-            <p class="project__description"><?= $project->description() ?></p>
+            <p><?= $project->description() ?></p>
           </div>
 
       </li>
