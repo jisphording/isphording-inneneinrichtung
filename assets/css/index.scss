@@ -301,10 +301,37 @@ main {
   .mood__claim {
     padding: 5rem 0;
     margin: 0 auto;
-    width: 60%;
+    width: 76%;
   }
 
   .mood__image {
     clear: both; // Clearing the float to have this content appear at the appropriate position after the others
+  }
+
+  // Home Project
+  figcaption {
+    margin-top: 1.5rem;
+  }
+
+  .project__text p {
+    width: 65%;
+  }
+ 
+  .project__text p.project__synopsis {
+    width: 85%;
+  }
+
+  .project__synopsis, // Home
+  .project__text h3 // Services
+  {
+    width: 85%;
+  }
+
+  .project__text p {
+    width: 65%;
+  }
+
+  .project__text--chapter {
+    margin-bottom: 1rem;
   }
 }
