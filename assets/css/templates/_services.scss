@@ -43,3 +43,46 @@
 .services .service__title--01 {
     color: var(--color-silver);
 }
+
+@media screen and (min-width: 480px) {
+    .grid__container--text__insertSlide .text {
+        margin: 0;
+    }
+
+    .services .grid__container--service__details {
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .services .insert-collection-products .items {
+        width: 38%;
+        float: left;
+    }
+
+    .services .grid__container {
+        grid-template-columns: 1fr; // overwriting base style
+    }
+
+    .services .grid__container--service__details {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .services .grid__container:nth-of-type(4) {
+        border: none;
+    }
+
+    .services .insert-collection-products .grid__image--items {
+        width: 62%;
+        float: left;
+    }
+
+    .services .insert-slide h2 {
+        margin: 0;
+    }
+
+    .services .details__emblem {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
