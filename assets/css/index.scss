@@ -118,13 +118,6 @@ main {
   font-family: var(--font-main-sans);
 }
 
-@media screen and (min-width: 640px) {
-  .intro {
-    padding-top: calc(4vw + 6rem);
-    padding-bottom: calc(4vw + 3rem);
-  }
-}
-
 /* --------------------------------------------------------------------------- */
 /* OTHER */
 /* --------------------------------------------------------------------------- */
@@ -213,9 +206,13 @@ main {
   cursor: pointer;
 }
 
+/* --------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+/* --------------------------------------------------------------------------- */
+
 @media screen and (min-width: 480px) {
     .mood__image {
-      padding-top: 56.25%; // 16:9 Aspect Ratio
+      padding-top: 50%; // 16:9 Aspect Ratio
       overflow: hidden;
       height: 0;
       position: relative;
@@ -223,7 +220,7 @@ main {
 
     .mood__image--inside {
       position: absolute;
-      top: -14.875%;;
+      top: -15%;;
       left: 0;
       width: 100%;
       height: 100%;
@@ -239,10 +236,37 @@ main {
     }
   }
 
+@media screen and (min-width: 640px) {
+  .intro {
+    padding-top: calc(3vw + 6rem);
+    padding-bottom: calc(3vw + 3rem);
+  }
+}
+
 @media screen and (min-width: 768px) {
-    .mood__claim {
-      padding: 5rem 0;
-      margin: 0 auto;
-      width: 60%;
-    }
+  .intro {
+    display: flex; // this is needed so that the section correctly wraps around the floating content inside
+  }
+
+  .intro__txt {
+    float: left;
+    width: 78%;
+  }
+
+  .intro__emblem {
+    display: block;
+    float: left;
+    width: 12%;
+    margin-top: 5vw;
+  }
+
+  .mood__claim {
+    padding: 5rem 0;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .mood__image {
+    clear: both; // Clearing the float to have this content appear at the appropriate position after the others
+  }
 }
