@@ -122,6 +122,12 @@ main {
 /* OTHER */
 /* --------------------------------------------------------------------------- */
 
+.project__text {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
 .tags {
   text-align: center;
   text-transform: uppercase;
@@ -244,6 +250,38 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  /* "Global" Whitespace Changes on the sides for multiple elements ... */
+
+  // Left Side
+  .header a.logo {
+    margin-left: 5vw;
+  }
+
+  .project__synopsis {
+    padding-left: 0; // Set to zero before indirectly giving a new left padding
+  }
+
+  .intro__txt,
+  figcaption, // Home
+  .project__title, // Home
+  .project__subtitle, // Home 
+  .project__text
+  {
+    padding-left: 5vw;
+  }
+
+  // Right Side
+  .menu__fake {
+    margin-right: 5vw;
+  }
+
+  .project__text--chapter {
+    margin-top: 0;
+  }
+
+  /* ... and other styles. */
+
+  // Intro
   .intro {
     display: flex; // this is needed so that the section correctly wraps around the floating content inside
   }
