@@ -2,6 +2,14 @@
 /* PROJECT DETAILS */
 /* --------------------------------------------------------------------------- */
 
+/* Mood */
+
+.projects .mood__image--inside {
+    top: 0;
+}
+
+/* Grid */
+
 .grid__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -144,6 +152,10 @@ figcaption {
 @media screen and (min-width: 768px) {
     .grid__container {
         grid-template-columns: 1fr 4fr;
+    }
+
+    .projects .grid__item--entry {
+        padding: 0;
     }
 
     .projects .details__emblem {
