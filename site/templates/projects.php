@@ -77,7 +77,9 @@
 	?>
 
 	<section class="mood__image">
-		<?php unshift_image($images_ar); ?>
+		<div class="mood__image--inside">
+			<?php unshift_image($images_ar); ?>
+		</div>
 	</section>
 
 	<section class="grid__container grid__container--project__details">
