@@ -45,6 +45,10 @@
     color: var(--color-silver);
 }
 
+.mood__image--inside figcaption {
+    display: none;
+}
+
 @media screen and (min-width: 480px) {
     .grid__container--text__insertSlide .text {
         margin: 0;
