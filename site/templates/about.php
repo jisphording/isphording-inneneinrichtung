@@ -110,6 +110,4 @@
 	
 </main>
 
-<?php snippet('insert-collection-products') ?>
-
 <?php snippet('footer') ?>
