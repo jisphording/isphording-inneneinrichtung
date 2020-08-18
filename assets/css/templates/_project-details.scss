@@ -167,3 +167,9 @@ figcaption {
         display: block;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .project__text--longform .grid__item--image:first-child {
+        margin: 0;
+    }
+}
