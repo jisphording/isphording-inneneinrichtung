@@ -2,4 +2,19 @@ Title: Home
 ----
 Intro: Stoffe, Möbel, Innenräume
 ----
-Claim:   Isphording *Inneneinrichtung* überträgt die *Ideen moderner Architektur* in zeitgenössische, kontemporäre Raumgestaltung.
+Claim:   Isphording *Inneneinrichtung* überträgt die *Ideen moderner Architektur* in eine zeitlose, individuelle Raumgestaltung.
+
+----
+
+Insert: In unserem Showroom finden Sie eine große Auswahl an Stoffen. *Wir beraten Sie mit unserer langjährigen Erfahrung bei der Auswahl.*
+
+----
+InsertColumn01: Die Auswahl an Stoffen ist so groß, dass man hier gut und gerne mal die Übersicht verlieren kann. Es gibt eine Vielzahl an Herstellern, die unterschiedliche Schwerpunkte setzen. Damit Sie sich ganz auf die Gestaltung Ihrer Wohnträume konzentrieren können helfen wir Ihnen dabei eine auf Sie und Ihre Wünsche abgestimmte Vorauswahl zu treffen.
+----
+InsertColumn02: Denn wir sind immer in einem engen Austausch mit den Herstellern und informieren uns so nicht nur laufend über Trends, sondern können auch schon im Vorfeld sicherstellen, dass die von uns vorausgewählten Stoffe für Ihren Einsatzzweck geeignet sind, damit Sie sich ganz auf die Auswahl konzentrieren können.
+Darüber hinaus können wir aus über dreissig Jahren Markterfahrung schöpfen und haben vielleicht noch den ein oder anderen Tipp, der Ihnen bisher verborgen blieb.  
+Sprechen Sie uns. Wir sorgen dafür, dass Sie Muster und Materialien geschickt zusammenbringen können.
+
+----
+
+InsertReadmore: Handgefertigte Möbel nach Maß
