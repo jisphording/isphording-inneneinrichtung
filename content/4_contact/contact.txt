@@ -1,20 +1,24 @@
+Title: Kontakt  
+----
+Intro: Kontakt., Hier finden, Sie uns
+----
+Claim: Unsere Lage nahe einem der größten Ballungsräume Europas *bringt immer neue Ideen in unsere Arbeit* mit ein.
+
+---- 
+*********************************************************************************************************************
+---- 
+
 Address:
 
 Mainstraße 125
 41469 Neuss
 
 Germany
-
 ----
-
 Email: mail@isphording-inneneinrichtung.de
-
 ----
-
 Phone: +49 2137 92 76 72
-
 ----
-
 Social:
 
 -
@@ -22,7 +26,6 @@ Social:
   url: https://instagram.com/isphording-inneneinrichtung
 
 ----
-
 Contact:
 
 Mainstraße 125
@@ -30,10 +33,27 @@ Mainstraße 125
 
 Germany
 
-----
+---- 
+*********************************************************************************************************************
+---- 
 
-Title: Kontakt  
+PageText: 
 
-----
+# Sie finden uns im Herzen des Rheinlands
 
-Intro: Kontakt., Hier finden, Sie uns
+Mit unserem Sitz an der Schnittstelle zwischen Düsseldorf und Köln sind wir einfach und schnell zu erreichen.
+
+## 01.
+
+Aus Richtung Köln folgen Sie der A57 bis zur Abfahrt Neuss Norf.
+An der Abfahrt fahren Sie Rechts. An der Nächsten Ampel Links. Weiter zu Schritt 03.
+
+## 02.
+
+Aus Richtung Düsseldorf folgen Sie der A57 bis zur Abfahrt Neuss Norf. An der Abfahrt fahren Sie an der Ampel Geradeaus. Weiter zu Schritt 03.
+
+## 03.
+
+Folgen Sie der Straße vorbei am Edeka in den Kreisverkehr. Hier die erste Ausfahrt nehmen, der Straße durch den zweiten Kreisverkehr in Richtung Ampel folgen. An der Ampel Links und schon sind Sie auf der Mainstraße.
+
+
