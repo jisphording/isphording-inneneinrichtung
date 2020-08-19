@@ -1,5 +1,82 @@
-Title: Services
+Title: Service
+----
+Intro: Service., Was wir für, Sie tun können
+----
+Claim: *Wir begleiten Sie* auf dem ganzen Weg *von der Konzeption* über die Auswahl der Materialien und die Umsetzung, *bis hin zur fertigen Einrichtung*
+
+---- 
+*********************************************************************************************************************
+---- 
+
+PageText: 
+
+# Neues Leben für Ihre Möbel
+
+## Kapitel 1, Arbeiten im Dialog
+
+### Wir sind ein unabhängiges Studio für Inneneinrichtung. Wir helfen unseren Kunden neue Lebensräume zu schaffen.
+
+Wir begreifen die Raumausstattung nicht nur als Oberflächengestaltung, sondern als kreativen Gesamtprozess. Dabei legen wir besonderen Wert auf den persönlichen Dialog mit Ihnen als Kunden und den Austausch mit Lieferanten und Produzenten, um neue, unerwartete Lösungen von höchster Qualität zu entwickeln.
+
+## Kapitel 2, Details sind uns wichtig
+
+### Erstklassige Textilien berühren die Sinne. Deshalb gehen wir bei der Qualität keine Kompromisse ein. 
+
+Fundiertes Wissen und ein Gespür für Details und hochwertige Rohmaterialien macheneinen spürbaren Unterschied und es ist uns wichtig eng mit den Herstellern zusammenzuarbeiten, damit auch Sie von neuen Entwicklungen und Impulsen profitieren.
+
+---- 
+*********************************************************************************************************************
+----
+
+Service01Titel: Besprechung, Kundenwünsche
+----
+Service01Text: In enger Zusammenarbeit mit Ihnen entwickeln wir raffinierte, auf Ihre Wohnsituation und Bedürfnisse zugeschnittene Lösungen.
 
 ----
 
-Intro: Service., Was wir für, Sie tun können
+Service02Titel: Besichtigung der Objekte, vor Ort
+----
+Service02Text: Gerne helfen wir auch dabei ein gesamtes Raumkonzept zu entwickeln. Nach einem Erstgespräch und ggf. einer Besichtigung der auszustattenden Objekte stellen wir ein erstes Konzept, welches wir gemeinsam weiter ausarbeiten.
+
+----
+
+Service03Titel: Zusammenstellung, von Mustern
+----
+Service03Text: Wir stellen Ihnen eine Vorauswahl an Mustern und Möbeln zusammen, die zu Ihren Anforderungen passen und bringen immer auch etwas mit, mit dem Sie noch nicht gerechnet haben.
+
+----
+
+Service04Titel: Spezialisierte, Näherei
+----
+Service04Text: Ein Stoff allein ist noch kein fertiges Produkt. Unsere hauseigene Näherei sorgt dafür, den Stoffen eine Form zu verleihen
+
+----
+
+Service05Titel: Eigene, Polsterei
+----
+Service05Text: Ob Aufpolstern alter Lieblingsstücke oder Reperaturarbeiten, wir legen großen wert auf die handwerklich bestmögliche Qualität bei der Umsetzung
+
+----
+
+Service06Titel: Eigene, Entwürfe
+----
+Service06Text: Sie möchten individuelle Möbelstücke, die kein Hersteller im Programm hat? Wir fertigen individuelle Möbelstücke nach Maß 
+
+---- 
+*********************************************************************************************************************
+----
+
+InsertCollectionProductsHeadline: In unserem Showroom finden Sie eine große Auswahl an Stoffen. *Vereinbaren Sie gerne mit uns einen Beratungstermin.* 
+----
+InsertCollectionProductsText: Wir führen Stoffe, Bezüge und Teppiche verschiedener Hersteller und mit mehr als 30 Jahren Erfahrung helfen wir Ihnen dabei die richtige Auswahl für jedes Projekt zu treffen.
+----
+InsertCollectionProductsItems: 
+
+- Chivasso
+- JAB Anstoetz
+- Carlucci
+- Romo
+- Colefax and Fowler
+- Pierre Frey
+- Kinnasand
+- Designers Guild
