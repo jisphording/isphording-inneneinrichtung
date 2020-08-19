@@ -1,5 +1,51 @@
-Title: Über uns
+Title: Über Uns
+----
+Intro: Interior, Design, Ausführung
+----
+Claim: Wir begleiten Sie auf dem ganzen Weg *von der Konzeption* über die *Auswahl der Materialien* und die Umsetzung, *bis hin zur fertigen Einrichtung*
 
+---- 
+*********************************************************************************************************************
+---- 
+
+PageText: 
+
+# Vom Einzelstück bis zur Kleinserie
+
+## Capitulo 1, zeitgenössische Innenraumkonzepte
+
+Isphording Inneneinrichtung wurde 1997 mit der Ambition gegründet zeitgenössische Innenraumkonzepte zum Wohnen, Leben und Arbeiten zu entwickeln und dabei eine funktionale Formsprache mit hoher handwerklicher Qualität zu verbinden. Im Mittelpunkt unserer Arbeit steht die Wohnraumgestaltung mit hochwertigen Stoffen führender Hersteller, wenn es um Qualität geht. Darüber hinaus bieten wir Ihnen auch eine große Auswahl an Möbeln. Und sollte das Passend einmal nicht dabei sein haben wir in unsrerer eigenen Werkstatt auch die Möglichkeit, individulle Möbel und Kleinserien selbst zu entwickelt. 
+Unsere eigenen Entwürfe erhalten dabei eine klare, effiziente Designsprache – eine Eleganz des Einfachen. 
+In unserer Fertigung kommen ausschließlich hochwertige Materialien lokaler Lieferanten zum Einsatz.
+
+*Isphording Inneneinrichtung überträgt die Ideen moderner Architektur in zeitgenössische Raumgestaltung.*
+
+Zusätzlich arbeiten wir mit einem langjährig aufgbautn Netzwerk spezialisierter Handwerksbetriebe zusammen um Ihnen auch Möbelstücke anzubieten, die über unsere eigenen Fertigungsmöglichkeiten hinausgehen, denn für uns steht Ihr Wohnwunsch im Vordergrund.
+
+
+## Capitulo 2, Stofflichkeiten Form verleihen
+
+Der Schwerpunkt unserer Arbeit sind hochwertige Stoffe verschiedener Hersteller. Vom skandinavischen Leinen bis zu bunten Musterstoffen bieten wir Ihnen nicht nur ein groß0es Sortiment aus Stoffen für den Innen- und Außenbereich. Durch unsere langjährige Erfahrung nud eine enge Zusammenarbeit mit den Herstellern bieten wir Ihnen eine fachliche Beratung, die weit über das hinausgeht, was Sie im Internet finden. So können Sie sich ganz auf die Ausgestaltung Ihrer Wonwünsche konzentrieren.
+
+### Wir sind ein unabhängiges Studio für Inneneinrichtung. Wir helfen unseren Kunden neue Lebensräume zu schaffen.
+
+Neben der eigenen Werkstatt für den Möbelbau verfügen wir noch über eine eigene Polsterei und Näherei, in der wir den Möbelbau und die Welt der Stoffe zusammenbringen. Dabei geht es nicht allein um die Anfertigung neuer Produkte, denn ein wichtiges Augenmerk ist uns auch alten und geliebten Stücken wieder ein neues Leben einzuhauchen. Vom einfachen Aufpolstern bis hin zu einem neuen Bezug oder der Aufarbeitung des Korpus arbeiten wir sorgfältig auf handwerklich hohem Niveau, damit Sie auch an Ihren alten Stücken noch langjährig Freude haben. 
+
+---- 
+*********************************************************************************************************************
 ----
 
-Intro: Interior, Design, Ausführung
+InsertCollectionProductsHeadline: In unserem Showroom finden Sie eine große Auswahl an Stoffen. *Vereinbaren Sie gerne mit uns einen Beratungstermin.* 
+----
+InsertCollectionProductsText: Wir führen Stoffe, Bezüge und Teppiche verschiedener Hersteller und mit mehr als 30 Jahren Erfahrung helfen wir Ihnen dabei die richtige Auswahl für jedes Projekt zu treffen.
+----
+InsertCollectionProductsItems: 
+
+- Chivasso
+- JAB Anstoetz
+- Carlucci
+- Romo
+- Colefax and Fowler
+- Pierre Frey
+- Kinnasand
+- Designers Guild
