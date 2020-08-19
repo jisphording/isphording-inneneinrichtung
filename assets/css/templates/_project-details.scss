@@ -55,12 +55,6 @@
     padding-bottom: 1rem;
 }
 
-.projects .emblem {
-    width: 80%;
-    margin: 0 auto;
-    padding: 3rem;
-}
-
 /* Image Grid */
 
 figcaption {
@@ -161,6 +155,10 @@ figcaption {
     .projects .details__emblem {
         display: block;
         border-right: 1px solid var(--color-silver-light);
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        
     }
 
     figcaption {
@@ -169,6 +167,10 @@ figcaption {
 }
 
 @media screen and (min-width: 1024px) {
+    .project__details {
+        padding-left: 1rem;
+    }
+
     .project__text--longform .grid__item--image:first-child {
         margin: 0;
     }
