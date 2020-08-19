@@ -30,22 +30,3 @@ Der Schwerpunkt unserer Arbeit sind hochwertige Stoffe verschiedener Hersteller.
 ### Wir sind ein unabhängiges Studio für Inneneinrichtung. Wir helfen unseren Kunden neue Lebensräume zu schaffen.
 
 Neben der eigenen Werkstatt für den Möbelbau verfügen wir noch über eine eigene Polsterei und Näherei, in der wir den Möbelbau und die Welt der Stoffe zusammenbringen. Dabei geht es nicht allein um die Anfertigung neuer Produkte, denn ein wichtiges Augenmerk ist uns auch alten und geliebten Stücken wieder ein neues Leben einzuhauchen. Vom einfachen Aufpolstern bis hin zu einem neuen Bezug oder der Aufarbeitung des Korpus arbeiten wir sorgfältig auf handwerklich hohem Niveau, damit Sie auch an Ihren alten Stücken noch langjährig Freude haben. 
-
----- 
-*********************************************************************************************************************
-----
-
-InsertCollectionProductsHeadline: In unserem Showroom finden Sie eine große Auswahl an Stoffen. *Vereinbaren Sie gerne mit uns einen Beratungstermin.* 
-----
-InsertCollectionProductsText: Wir führen Stoffe, Bezüge und Teppiche verschiedener Hersteller und mit mehr als 30 Jahren Erfahrung helfen wir Ihnen dabei die richtige Auswahl für jedes Projekt zu treffen.
-----
-InsertCollectionProductsItems: 
-
-- Chivasso
-- JAB Anstoetz
-- Carlucci
-- Romo
-- Colefax and Fowler
-- Pierre Frey
-- Kinnasand
-- Designers Guild
