@@ -157,6 +157,21 @@
 				<p class="service__details"><?= $page->Service05Text()->kirby() ?></p>
 			</li>
 		</ul>
+		<!-- Service List 06 -->
+		<ul class="grid__container">
+			<li class="number">
+				<p>6</p>
+			</li>
+			<li class="details__emblem">
+				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			</li>
+			<li class="grid__item grid__item--headline">
+				<?php $txt = $page->Service06Titel()->kirby(); split_txt($txt, ', '); ?>
+			</li>
+			<li class="grid__item grid__item--entry">
+				<p class="service__details"><?= $page->Service06Text()->kirby() ?></p>
+			</li>
+		</ul>
 	</section>
 
 	<section class="project__text--longform">
