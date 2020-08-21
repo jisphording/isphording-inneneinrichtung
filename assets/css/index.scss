@@ -336,6 +336,16 @@ main {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .mood__image {
+    padding-top: 45%;
+  }
+
+  .mood__image--inside {
+    top: -40%;;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .intro {
     padding-top: calc(4vw + 4rem);
