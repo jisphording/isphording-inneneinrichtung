@@ -363,6 +363,43 @@ main {
   .mood__image--inside {
     top: -60%;;
   }
+
+  // Give Whitespace to main body content
+  .grid__item--headline h1, 
+  .grid__item--headline h2 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+  }
+
+  // Give Whitespace to main body content
+  .projects {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .project__text {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  // Remove Padding to accomodate for whitespace
+  .project__title,
+  .project__subtitle,
+  .project__text {
+    padding-left: 0;
+  }
+
+  // move project description to grid to reflow content
+  .grid__container--text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+
+  figcaption,
+  .grid__item--bodycopy {
+    padding-left: 2vw;
+  }
 }
 
 @media screen and (min-width: 1440px) {
