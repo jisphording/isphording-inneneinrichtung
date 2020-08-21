@@ -355,6 +355,14 @@ main {
   .intro__emblem {
     margin-top: 3.75vw;
   }
+
+  .mood__image {
+    padding-top: 35%;
+  }
+
+  .mood__image--inside {
+    top: -60%;;
+  }
 }
 
 @media screen and (min-width: 1440px) {
