@@ -69,20 +69,22 @@ em {
     }
 }
 
-@media 
-screen and (min-width: 1920px),
-screen and ( -webkit-min-device-pixel-ratio: 1.25 ),
-screen and ( min--moz-device-pixel-ratio: 1.25 ), 
-screen and ( -o-min-device-pixel-ratio: 1.25 / 1 ),
-screen and ( min-device-pixel-ratio: 1.25 ),
-screen and ( min-resolution: 200dpi ),
-screen and ( min-resolution: 1.25dppx ) {
+@media screen and (min-width: 1920px) {
     :root {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media screen and (min-width: 1920px) {
+// This differentiates between Multiple Media Query resolutions on different physical device sizes to accomodate proportions on older monitors. 
+// TODO - The approach has to be tested and evalutated if it is functioning reliably
+@media 
+screen and (min-width: 1920px) and ( -webkit-min-device-pixel-ratio: 1.25 ),
+screen and (min-width: 1920px) and ( -webkit-min-device-pixel-ratio: 1.25 ),
+screen and (min-width: 1920px) and ( min--moz-device-pixel-ratio: 1.25 ), 
+screen and (min-width: 1920px) and ( -o-min-device-pixel-ratio: 1.25 / 1 ),
+screen and (min-width: 1920px) and ( min-device-pixel-ratio: 1.25 ),
+screen and (min-width: 1920px) and ( min-resolution: 170dpi ),
+screen and (min-width: 1920px) and ( min-resolution: 1.25dppx ) {
     :root {
         font-size: 16px;
     }
