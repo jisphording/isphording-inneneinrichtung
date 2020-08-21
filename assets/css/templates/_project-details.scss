@@ -175,3 +175,9 @@ figcaption {
         margin: 0;
     }
 }
+
+@media screen and (orientation : landscape) {
+    .projects .grid__image {
+        height: 30vw;
+    }
+}
