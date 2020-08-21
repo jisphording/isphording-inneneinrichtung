@@ -150,3 +150,9 @@
 		font-size: var(--font-size-menu-link);
 	}
 }
+
+@media screen and (min-width: 1280px) {
+	.header .logo {
+		width: 25%;
+	}
+}
