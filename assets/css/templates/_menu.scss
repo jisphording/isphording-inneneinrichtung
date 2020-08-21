@@ -14,7 +14,7 @@
 
 .menu__fake,
 .header .logo {
-	z-index: 99999;
+	z-index: 9999;
 	float: right;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .screen--full {
-	opacity: 0.6;
+	opacity: 1;
 	will-change: transform;
 }
 
@@ -91,7 +91,8 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+	left: 0;
+	z-index: 9999; // above all other content
 }
 
 .menu {
