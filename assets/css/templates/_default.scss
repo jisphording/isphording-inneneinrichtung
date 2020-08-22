@@ -2,3 +2,8 @@
   max-width: 35rem;
   margin: 0 auto;
 }
+
+.page > * {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
