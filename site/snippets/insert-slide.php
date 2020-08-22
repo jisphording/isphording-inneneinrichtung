@@ -1,7 +1,7 @@
 <section class="insert-slide">
     <div class="grid__item--image__insertSlide"> 
         <?php if($image = $page->image('insertSlide.webp')): ?>
-            <img class="grid__image" src="<?= $image->url() ?>" alt="">
+            <img src="<?= $image->url() ?>" alt="">
         <?php endif ?>
     </div>
     <div class="grid__container--text__insertSlide">
