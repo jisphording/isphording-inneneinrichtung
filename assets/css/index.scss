@@ -413,6 +413,17 @@ main {
     width: 10%;
     margin-top: 2.5vw;
   }
+
+  // Reflow the project text on home to two columns on bigger screens
+  .project__text {
+    padding-right: 0;
+  }
+  // Reflow the project text on home to two columns on bigger screens 
+  .project__text p.project__synopsis,
+  .project__text p {
+    width: 50%;
+    float: left;
+  }
 }
 
 @media screen and (min-width: 1680px) {

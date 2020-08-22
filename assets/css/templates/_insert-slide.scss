@@ -110,6 +110,12 @@
 
 @media screen and (min-width: 1440px) {
   .grid__item--image__insertSlide img {
-    height: 40vw;
+    height: 48vw;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .grid__item--image__insertSlide img {
+    height: 42vw;
   }
 }

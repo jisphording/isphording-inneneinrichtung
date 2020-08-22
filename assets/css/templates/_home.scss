@@ -17,6 +17,10 @@ figcaption .caption {
   padding-right: 1rem;
 }
 
+.project__synopsis {
+  padding-left: 0;
+}
+
 .project__title {
   font-family: var(--font-main-serif);
   margin-top: 1rem;
@@ -106,7 +110,7 @@ figcaption .caption {
   }
 
   .projects .grid__image {
-    height: 30vw;
+    height: 25vw;
 }
 
   .projects li:nth-child(odd) .grid__item--image {
