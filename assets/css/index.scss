@@ -110,7 +110,7 @@ main {
   font-family: var(--font-main-serif);
   font-weight: 900;
   line-height: calc(3vw + 0.75rem);
-  font-size: calc(1vw + 1rem);
+  font-size: calc(2vw + 1rem);
   padding: 2rem .5rem;
 }
 
@@ -270,13 +270,14 @@ main {
     padding-left: 5vw;
   }
 
+  // increase margin to accomodate for increased side whitespace
+  .project__text {
+    margin-bottom: 2.5rem;
+  }
+
   // Right Side
   .menu__fake {
     margin-right: 5vw;
-  }
-
-  .project__text--chapter {
-    margin-top: 0;
   }
 
   /* ... and other styles. */
@@ -343,6 +344,11 @@ main {
 
   .mood__image--inside {
     top: -40%;;
+  }
+
+  // slightly further increase margin to accomodate for increased side whitespace
+  .project__text {
+    margin-bottom: 3rem;
   }
 }
 

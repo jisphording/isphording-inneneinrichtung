@@ -25,6 +25,10 @@
     display: none;
 }
 
+.projects .grid__item {
+    grid-column: span 2;
+}
+
 .grid__container .project__details--content ul {
     grid-template-columns: 1fr;
     height: 100%;
@@ -38,20 +42,7 @@
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-// Since this field of the project details probably contains the most text it is resized to fill up two colums
-.projects .grid__item--entry:nth-of-type(6) {
-    border-bottom: none;
     grid-column: span 2;
-}
-// The sizeing of the text width has to be changed as well
-.projects .grid__item--entry:nth-of-type(6) .project__details:first-of-type {
-    width: 25%;
-}
-// The sizeing of the text width has to be changed as well
-.projects .grid__item--entry:nth-of-type(6) .project__details:last-of-type {
-    width: 75%;
 }
 
 .projects .grid__item--entry {
@@ -160,7 +151,21 @@ figcaption {
     }
 
     .grid__item--entry {
-        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+    }
+  
+    // Since this field of the project details probably contains the most text it is resized to fill up two colums
+    .projects .grid__item--entry:nth-of-type(6) {
+        border-bottom: none;
+        grid-column: span 2;
+    }
+    // The sizeing of the text width has to be changed as well
+    .projects .grid__item--entry .project__details:first-of-type {
+        width: 25%;
+    }
+    // The sizeing of the text width has to be changed as well
+    .projects .grid__item--entry .project__details:last-of-type {
+        width: 75%;
     }
 }
 
@@ -170,7 +175,7 @@ figcaption {
     }
 
     .projects .grid__item--entry {
-        padding: 0;
+        padding-top: 1.35rem;
     }
 
     .projects .details__emblem {
@@ -179,11 +184,32 @@ figcaption {
         width: 100%;
         margin: 0 auto;
         padding: 3rem;
-        
     }
 
     figcaption {
         display: block;
+    }
+
+    .grid__container .project__details--content .grid__item--headline {
+        padding-top: 1.4rem;
+    }
+
+    .projects .grid__item {
+        grid-column: span 1;
+    }
+
+    .projects .grid__item--entry .project__details:first-of-type,
+    .projects .grid__item--entry .project__details:last-of-type {
+        width: 50%;
+    }
+
+    // The sizeing of the text width has to be changed as well
+    .projects .grid__item--entry:nth-of-type(6) .project__details:first-of-type {
+        width: 25%;
+    }
+    // The sizeing of the text width has to be changed as well
+    .projects .grid__item--entry:nth-of-type(6) .project__details:last-of-type {
+        width: 75%;
     }
 }
 
