@@ -30,8 +30,28 @@
     height: 100%;
 }
 
+.grid__container .project__details--content .grid__item--headline .project__title {
+    margin-top: 0;
+}
+
+.grid__container .project__details--content .grid__item--headline {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+// Since this field of the project details probably contains the most text it is resized to fill up two colums
 .projects .grid__item--entry:nth-of-type(6) {
     border-bottom: none;
+    grid-column: span 2;
+}
+// The sizeing of the text width has to be changed as well
+.projects .grid__item--entry:nth-of-type(6) .project__details:first-of-type {
+    width: 25%;
+}
+// The sizeing of the text width has to be changed as well
+.projects .grid__item--entry:nth-of-type(6) .project__details:last-of-type {
+    width: 75%;
 }
 
 .projects .grid__item--entry {
@@ -45,6 +65,7 @@
 .project__details:nth-of-type(even) {
     color: var(--color-silver);
 }
+
 
 .project__details {
     width: 50%;
@@ -177,7 +198,7 @@ figcaption {
 }
 
 @media screen and (orientation : landscape) {
-    .projects .grid__image {
+    .home .grid__image {
         height: 30vw;
     }
 }
