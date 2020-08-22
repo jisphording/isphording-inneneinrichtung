@@ -38,6 +38,11 @@
     height: 30vw;
 }
 
+.insert-other-projects .project__synopsis {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 @media only screen and (min-width: 480px) {
     .insert-other-projects .projects ul {
         grid-template-columns: 1fr 1fr;
@@ -57,7 +62,7 @@
     .insert-other-projects {
         margin-top: 1rem;
     }
-    
+
     .insert-other-projects .projects ul {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -72,7 +77,4 @@
         margin-bottom: 1.85rem;
     }
 
-    .insert-other-projects .project__synopsis {
-        padding-right: 0;
-    }
 } 

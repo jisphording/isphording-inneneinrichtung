@@ -9,7 +9,7 @@
     <?= $page -> Claim() -> kirbytext() ?>
   </section>
 
-  <section class="projects">
+  <section class="projects projects__overview">
     <ul>
       <?php foreach(page('projects')->children()->published()->limit(4) as $project): ?>
       <li>
