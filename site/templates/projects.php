@@ -172,8 +172,6 @@
 	
 </main>
 
-<?php snippet('insert-readmore') ?>
-
 <?php snippet('insert-other-projects') ?>
 
 <?php snippet('footer') ?>
