@@ -339,13 +339,14 @@ main {
   }
 
   .mood__image--inside {
-    top: -40%;;
+    top: -40%;
   }
 
   // slightly further increase margin to accomodate for increased side whitespace
   .project__text {
     margin-bottom: 3rem;
   }
+
 }
 
 @media screen and (min-width: 1280px) {
