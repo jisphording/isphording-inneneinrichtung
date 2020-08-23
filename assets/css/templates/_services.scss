@@ -62,6 +62,11 @@
         grid-column: span 2;
     }
 
+    .services .grid__item--headline,
+    .services .grid__item--bodycopy {
+        grid-column: span 2;
+    }
+
     .services .grid__item--headline h2 {
         font-size: 1rem;
     }
