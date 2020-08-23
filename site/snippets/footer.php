@@ -19,13 +19,9 @@
           </nav>
         </ul>
         <ul class="footer-navigation__menu__sub">
-          <li>Kontakt</li>
-          <li>Mainstraße 125</li>
-          <li>41469 Neuss</li>
-          <li>Germany</li>
-          <li>&nbsp;</p>
-          <li>mail@isphording-inneneinrichtung.de</li>
-          <li>+49 2137 92 76 72</li>
+          <?= $page->address()->kt() ?>
+          <li><?= html::email($page->email()) ?></li>
+          <li><?= html::tel($page->phone()) ?></li>
         </ul>
         <ul class="footer-navigation__menu__sub">
           <li>Legal</li>
