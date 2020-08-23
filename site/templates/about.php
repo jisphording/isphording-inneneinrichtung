@@ -45,8 +45,6 @@
   </section>
 
 	<section class="project__text--longform">
-		<section class="project__text project__text--chapter">
-		</section>
 		<?php 
     // PHP HELPER FUNTION
 		// -> Placing a number of images from a given array where the images are stored
