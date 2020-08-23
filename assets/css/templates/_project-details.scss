@@ -223,3 +223,10 @@ figcaption {
         height: 25vw;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    // overwrites index template
+    .projects .project__text {
+        // padding-left: 5vw;
+    }
+}

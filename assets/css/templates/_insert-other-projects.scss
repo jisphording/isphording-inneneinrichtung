@@ -83,3 +83,26 @@
     }
 
 } 
+
+@media screen and (min-width: 1280px) {
+    // TODO: The following style overwrites a style from the homepage due to the same name
+    //       This should be fixed in a refactor 
+    .insert-other-projects .grid__container--text {
+        grid-template-columns: 1fr;
+    }
+
+    .insert-other-projects .grid__item--bodycopy {
+        padding-left: 0;
+    }
+
+    // TODO: Maybe this should be moved to the typography template
+    .insert-other-projects .grid__item--headline h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    // reverting margins from a lower media query
+    .insert-other-projects .grid__item--headline {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+}

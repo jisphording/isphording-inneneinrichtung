@@ -388,7 +388,7 @@ main {
   // Remove Padding to accomodate for whitespace
   .project__title,
   .project__subtitle,
-  .project__text {
+  .home .project__text {
     padding-left: 0;
   }
 
@@ -416,12 +416,11 @@ main {
   }
 
   // Reflow the project text on home to two columns on bigger screens
-  .project__text {
+  .home .project__text {
     padding-right: 0;
   }
-  // Reflow the project text on home to two columns on bigger screens 
-  .project__text p.project__synopsis,
-  .project__text p {
+  // Reflow the project text on home to two columns on bigger screens
+  .home .project__text p {
     width: 50%;
     float: left;
   }
