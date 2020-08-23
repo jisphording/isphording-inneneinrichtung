@@ -123,7 +123,7 @@ figcaption {
     display: block;
 }
 
-.project__text--chapter {
+.projects .project__text--chapter {
     border-top: 1px solid var(--color-silver-light);
     margin-top: 2rem;
 }
@@ -216,13 +216,4 @@ figcaption {
     .project__text--longform .grid__item--image:first-child {
         margin: 0;
     }
-}
-
-@media screen and (orientation : landscape) {
-    .home .grid__image {
-        height: 25vw;
-    }
-}
-
-@media screen and (min-width: 1280px) {
 }

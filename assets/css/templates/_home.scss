@@ -109,10 +109,6 @@ figcaption .caption {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .projects .grid__image {
-    height: 25vw;
-}
-
   .projects li:nth-child(odd) .grid__item--image {
     grid-column: span 2;
   }

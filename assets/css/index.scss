@@ -237,6 +237,11 @@ main {
     .grid__item--headline h2 {
       font-size: 1.5rem;
     }
+
+    .contact .grid__image,
+    .projects .grid__image {
+        height: 35vw;
+    }
   }
 
 @media screen and (min-width: 640px) {
@@ -348,6 +353,11 @@ main {
     margin-bottom: 3rem;
   }
 
+  .contact .grid__image,
+  .projects .grid__image {
+      height: 25vw;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -376,14 +386,18 @@ main {
   }
 
   // Give Whitespace to main body content
-  .home .projects {
+  .home .projects,
+  .grid__container--images {
     padding-left: 5vw;
     padding-right: 5vw;
   }
 
   .project__text {
-    margin-top: 2.5rem;
     margin-bottom: 3rem;
+  }
+
+  .projects .project__text {
+    margin-top: 2.5rem;
   }
 
   // Remove Padding to accomodate for whitespace
@@ -431,5 +445,11 @@ main {
   .intro__emblem {
     width: 7%;
     margin-top: 4vw;
+  }
+}
+
+@media screen and (orientation : landscape) {
+  .home .grid__image {
+      height: 25vw;
   }
 }
