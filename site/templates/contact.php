@@ -1,42 +1,47 @@
 <?php snippet('header') ?>
 
 <main>
-  <?php snippet('intro') ?>
+<?php snippet('intro') ?>
 
-  <!-- ALL IMAGES OF PAGE TO ARRAY -->
+<?php // an array to store all the images in to make it easier to place rthem in various parts of the template  
+		$images_ar = NULL;
+		$currentpage = $page;
 
-  	<!-- Since at the moment kirby serves all filetypes found we wrap everything in a PHP function that checks for the image type and then filters out everything that is not webp -->
-	<?php 
-	// an array to store all the images in to make it easier to place rthem in various parts of the template  
-	$images_ar = NULL;
-	
-	// FILTERING THE IMAGES
+		// FILTERING THE IMAGES
 
-	// make use of kirbys filter function to load web optimized images for all images of the site
-	$images = $page->images()->filterBy('extension', 'webp');
-	// filter images by filename containing a string to use for main site body
-	$images_filtered = $images->filterBy('filename', '*=', 'contact-');
-	// Then load those filtered images into an array to populate the page
-	foreach($images_filtered as $file ):
-		$images_ar[] = $file;
-  endforeach;
+		// make use of kirbys filter function to load web optimized images for all images of the site
+		$images = $page->images()->filterBy('extension', 'webp');
+		// filter images by filename containing a string to use for main site body
+		$images_filtered = $images->filterBy('filename', '*=', 'contact-');
+		$figcount = 0; // used inside function for numbering images
+		
+		foreach($images_filtered as $file ):
+			$images_ar[] = $file;
+		endforeach;
 
-	// PHP HELPER FUNCTION:
-	// This function takes a kirby files object and can be called in this template to place the first image from this object along with it's meta information and then remove it from the array to avoid duplication
-	// -> the '&' infront of the variable is used to pass a reference to the variable instead of a copy
-	function unshift_image(&$el) {
-		// First, we check if the array actually contains any images
-		if (empty($el)) {
-			// Do nothing, because array is empty and/or all images are already placed
-		} else {				
-			?><figure class="grid__item grid__item--image">
-			<img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>">
-			</figure>
-			<?php
-			array_shift($el);
-		}	
-	}
-?>
+		// PHP HELPER FUNCTION:
+		// This function takes a kirby files object and can be called in this template to place the first image from this object along with it's meta information and then remove it from the array to avoid duplication
+		// -> the '&' infront of the variable is used to pass a reference to the variable instead of a copy
+		function unshift_image(&$el) {
+
+			// First, we check if the array actually contains any images
+			if (empty($el)) {
+				// Do nothing, because array is empty and/or all images are already placed
+			} else {				
+
+				?><figure class="grid__item grid__item--image">
+					<img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>">
+
+					<figcaption>
+						<span class="title"><p><?= $el[0]->content()->title() ?></p></span>
+						<span class="caption"><p><?= $el[0]->content()->caption(); ?></p></span>
+					</figcaption>
+				</figure>
+				<?php
+				array_shift($el);
+			}	
+		}
+	?>  
 
 <?php snippet('introMood') ?>
 
