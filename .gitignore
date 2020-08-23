@@ -37,6 +37,7 @@ Icon
 # -------------SECURITY-------------
 
 /.htaccess
+/.vscode/*
 
 # Cache Files
 # ---------------
