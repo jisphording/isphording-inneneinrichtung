@@ -96,64 +96,34 @@
 			}
     }
   ?>  
+	<?php // Placing the first half of the images
+	place_images($images_ar, 3); ?>
+	</section>
 
-<?php // Placing First paragraph of text
-	unshift_projecttext($projecttext_ar); 
-	unshift_projecttext($projecttext_ar);  ?>
+	<section class="anfahrt">
+		<div class="anfahrt__text anfahrt__text--headline project__text">
+			<?= $page -> Anfahrt() -> kirbytext() ?>
+		</div>
+		<div class="anfahrt__text">	
+			<?php // Placing The PageText
+			// TODO: At the moment the page text is just the "Wegbeschreibung" 
+			// Refactoring should wrap that into it's own unshiftable type
+			unshift_projecttext($projecttext_ar);
+			unshift_projecttext($projecttext_ar);
+			unshift_projecttext($projecttext_ar);
+			unshift_projecttext($projecttext_ar);  ?>
+		</div>
+		<div class="anfahrt__map">
+			<?php if($image = $page->image('location-map.webp')): ?>
+				<img src="<?= $image->url() ?>" alt="Karte des Rheinlands mit Verortung in Neuss">
+			<?php endif ?>
+		</div>
+	</section>
 
-  <?php // Placing the first half of the images
-  place_images($images_ar, 3); ?>
-  </section>
-
-	<?php // Placing Second paragraph of text
-	unshift_projecttext($projecttext_ar);  ?>
-  
 	<section class="project__text--longform">
 		<?php // Placing the other half of the images
 		place_images($images_ar); ?>
 	</section>
-  
-  <div class="layout">
-
-    <aside>
-      <section>
-        <h2>Address</h2>
-        <div class="text">
-          <?= $page->address()->kt() ?>
-        </div>
-      </section>
-
-      <section>
-        <h2>Email</h2>
-        <div class="text">
-          <?= html::email($page->email()) ?>
-        </div>
-      </section>
-
-      <section>
-        <h2>Phone</h2>
-        <div class="text">
-          <?= html::tel($page->phone()) ?>
-        </div>
-      </section>
-
-      <section>
-        <h2>On the web</h2>
-        <div class="text">
-          <ul>
-            <?php foreach ($page->social()->toStructure() as $social): ?>
-            <li><?= html::a($social->url(), $social->platform()) ?></li>
-            <?php endforeach ?>
-          </ul>
-        </div>
-      </section>
-
-    </aside>
-
-    <div class="text">
-      <?= $page->text()->kt() ?>
-    </div>
-  </div>
 </main>
 
 <?php snippet('footer') ?>
