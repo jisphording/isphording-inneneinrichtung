@@ -55,6 +55,12 @@
     grid-gap: 0;
   }
 
+  // specific padding for services page insert
+  .services .grid__container--text__insertSlide {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .insert-slide h2 {
       margin: 0 auto;
       width: 80%;
@@ -90,6 +96,23 @@
         grid-column-start: 2;
         grid-column-end: 6;
         margin-top: 2rem;
+    }
+
+    // services page style
+    .services .grid__container--text__insertSlide .text {
+      grid-column: span 2;
+    }
+
+    .services .grid__container--text__insertSlide .items {
+      padding-left: 2rem;
+    }
+
+    .services .insert-collection-products .grid__image--items {
+      width: 100%;
+      height: auto;
+      grid-column: span 3;
+      padding: 0;
+      padding-bottom: 3rem;
     }
 
     .grid__item--bodycopy__insertSlide {
