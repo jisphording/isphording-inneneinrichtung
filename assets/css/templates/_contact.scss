@@ -1,0 +1,73 @@
+/* --------------------------------------------------------------------------- */
+/* CONTACT PAGE */
+/* --------------------------------------------------------------------------- */
+
+.anfahrt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+.anfahrt .project__text h1,
+.anfahrt .project__text h1 em {
+    font-family: var(--font-main-serif);
+    font-weight: 900;
+    line-height: calc(3vw + 0.75rem);
+    font-size: calc(2vw + 1rem);
+    color: var(--color-black);
+}
+
+.anfahrt .project__text h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.anfahrt .project__text h1 em {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.anfahrt .project__text p {
+    color: var(--color-silver);
+}
+
+.anfahrt .project__text h1 em {
+    font-family: var(--font-main-sans);
+}
+
+.anfahrt__text--headline p {
+    grid-column: span 2;
+    font-family: var(--font-main-serif);
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 2rem;
+} 
+  
+@media screen and (min-width: 768px) {
+    .anfahrt {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+    }
+
+    .anfahrt__map,
+    .anfahrt__text {
+        grid-column:span 1;
+    }
+
+    .anfahrt__text--headline {
+        grid-column: span 2;
+    }
+
+    .anfahrt .project__text p {
+        width: 100%;
+    }
+
+    .anfahrt__map {
+        padding: 5vw;
+    }
+
+    .anfahrt .project__text p {
+        width: 65%;
+    }
+  }
