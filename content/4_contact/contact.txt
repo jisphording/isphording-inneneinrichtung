@@ -10,10 +10,10 @@ Claim: Unsere Lage nahe einem der größten Ballungsräume Europas *bringt immer
 
 Address:
 
-Mainstraße 125
-41469 Neuss
-
-Germany
+* Kontakt
+* Mainstraße 125
+* 41469 Neuss
+* Germany
 ----
 Email: mail@isphording-inneneinrichtung.de
 ----
@@ -37,11 +37,17 @@ Germany
 *********************************************************************************************************************
 ---- 
 
-PageText: 
+Anfahrt: 
 
-# Sie finden uns im Herzen des Rheinlands
+# Sie finden uns im *Herzen des Rheinlands*
 
 Mit unserem Sitz an der Schnittstelle zwischen Düsseldorf und Köln sind wir einfach und schnell zu erreichen.
+
+---- 
+*********************************************************************************************************************
+---- 
+
+PageText: 
 
 ## 01.
 
