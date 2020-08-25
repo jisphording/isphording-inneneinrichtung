@@ -392,6 +392,12 @@ main {
     padding-right: 5vw;
   }
 
+  // Revert for home, because on home the containers are nested differently (TODO)
+  .home .grid__container--images {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .project__text {
     margin-bottom: 3rem;
   }
@@ -402,8 +408,7 @@ main {
 
   // Remove Padding to accomodate for whitespace
   .project__title,
-  .project__subtitle,
-  .home .project__text {
+  .project__subtitle {
     padding-left: 0;
   }
 
