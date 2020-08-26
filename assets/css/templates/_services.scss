@@ -105,3 +105,38 @@
         grid-column-end: 2;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    // Reorganizing the service bullet point area to a little nicer layout on larger screens
+    // TODO: - Maybe it would be nicer to have a whole different layout for larger screens 
+    .services .grid__container--service__details {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-right: 4.5vw;
+    }
+
+    .services .grid__container--service__details .details__emblem  {
+        width: 8vw;
+        margin-top: -1.5rem;
+        margin-bottom: .5rem;
+        grid-column: span 1;
+    }
+
+    .services .grid__container--service__details .grid__item--headline {
+        margin-top: 0;
+        grid-template-columns: 2fr;
+    }
+
+    .services .grid__container--service__details .grid__item--headline h2 {
+        line-height: 1rem;
+    }
+
+    .services .grid__container .number {
+        grid-column: span 3;
+    }
+
+    .services .grid__container--service__details .grid__item--entry {
+        grid-column: span 3;
+        padding: 0;
+        padding-left: 3.75vw;
+    }
+}
