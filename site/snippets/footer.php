@@ -19,9 +19,9 @@
           </nav>
         </ul>
         <ul class="footer-navigation__menu__sub">
-          <?= $page->address()->kt() ?>
-          <li><?= html::email($page->email()) ?></li>
-          <li><?= html::tel($page->phone()) ?></li>
+          <?= page('imprint')->address()->kt() ?>
+          <li><?= html::email(page('imprint')->email()) ?></li>
+          <li><?= html::tel(page('imprint')->phone()) ?></li>
         </ul>
         <ul class="footer-navigation__menu__sub">
           <li>Legal</li>
