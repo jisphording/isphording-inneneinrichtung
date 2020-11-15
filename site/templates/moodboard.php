@@ -30,8 +30,14 @@
 			// Do nothing, because array is empty and/or all images are already placed
 		} else {				
 			?><figure class="grid__item grid__item--image">
-			<img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>">
-			</figure>
+          <div class="grid__image--inside">
+			      <img class="grid__image" src="<?php echo $el[0]->url() ?>" alt="<?= $el[0]->content()->title() ?>">
+          </div>
+          <figcaption>
+            <span class="title"><p><?= $el[0]->title() ?></p></span>
+            <span class="caption"><p><?= $el[0]->caption() ?></p></span>
+          </figcaption>
+        </figure>
 			<?php
 			array_shift($el);
 		}	
