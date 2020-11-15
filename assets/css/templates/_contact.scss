@@ -71,3 +71,23 @@
         width: 65%;
     }
   }
+
+@media screen and (min-width: 1024px) {
+    .anfahrt {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .anfahrt .project__text p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .anfahrt {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .anfahrt__map {
+        padding: 2.5vw 10vw;
+    }
+}
