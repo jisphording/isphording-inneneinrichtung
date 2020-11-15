@@ -133,6 +133,12 @@ figcaption {
     border: none;
 }
 
+@media screen and(min-width: 480px) {
+    .projects .mood__image {
+        padding-top: 35%;
+    }
+}
+
 @media screen and (min-width: 560px) {
     .grid__container .project__details--content ul {
         grid-template-columns: 1fr 1fr;
@@ -215,5 +221,9 @@ figcaption {
 
     .project__text--longform .grid__item--image:first-child {
         margin: 0;
+    }
+
+    .projects .mood__image {
+        padding-top: 25%;
     }
 }

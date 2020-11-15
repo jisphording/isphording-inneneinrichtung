@@ -378,6 +378,11 @@ main {
     top: -60%;;
   }
 
+  .mood__claim {
+    padding: 9vw 0;
+    width: 65%;
+  }
+
   // Give Whitespace to main body content
   .grid__item--headline h1, 
   .grid__item--headline h2 {
@@ -443,6 +448,17 @@ main {
   .home .project__text p {
     width: 50%;
     float: left;
+  }
+
+  .project__synopsis, // Home
+  .project__text h1,
+  .project__text h3 // Services
+  {
+    width: 65%;
+  }
+
+  .project__text p {
+    width: 50%;
   }
 }
 
