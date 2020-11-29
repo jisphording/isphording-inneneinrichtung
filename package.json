@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/*",
     "build": "npm run clean && npm run build:parcel && npm run build:sass && npm run imagemin",
-    "build:sass": "sass assets/css:dist",
-    "build:parcel": "parcel build assets/js/script.js -d dist --no-minify --no-source-maps --public-url /assets",
+    "build:sass": "sass assets/css:dist --style compressed",
+    "build:parcel": "parcel build assets/js/script.js -d dist --public-url /dist",
     "watch": "concurrently --kill-others \"npm run watch:sass\" \"npm run watch:parcel\"",
     "watch:sass": "sass --watch assets/css:dist",
     "watch:parcel": "parcel watch assets/js/script.js -d dist /assets",
@@ -40,6 +40,7 @@
     "imagemin": "^7.0.1",
     "imagemin-keep-folder": "^5.3.2",
     "imagemin-webp": "^5.1.0",
+    "imagemin-svgo": "^8.0.0",
     "parcel": "^1.12.4",
     "sass": "^1.29.0"
   }
