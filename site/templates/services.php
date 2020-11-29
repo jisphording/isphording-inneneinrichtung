@@ -88,7 +88,7 @@
 				<p>1</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_besprechung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besprechung.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service01Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -103,7 +103,7 @@
 				<p>2</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_besichtigung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besichtigung.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service02Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -118,7 +118,7 @@
 				<p>3</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_stoffe.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_stoffe.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service03Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -133,7 +133,7 @@
 				<p>4</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_naeherei.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_naeherei.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service04Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -148,7 +148,7 @@
 				<p>5</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_polsterei.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_polsterei.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service05Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -163,7 +163,7 @@
 				<p>6</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url('assets') ?>/img/service-icon_planung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_planung.svg">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service06Titel()->kirby(); split_txt($txt, ', '); ?>

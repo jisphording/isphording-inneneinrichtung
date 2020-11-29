@@ -18,6 +18,6 @@
         ?>
     </div>
     <div class="intro__emblem">
-        <img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+        <img class="emblem" src="<?= $kirby->url() ?>/dist/img/emblem.svg">
     </div>
 </section>

@@ -21,7 +21,7 @@
     <header class="header">
 
 		<section id="navbar" class="navbar">
-			<a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-light.png"></a>
+			<a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-light.webp"></a>
 
 			<div class="menu__fake">
 					<p>Men&uuml;</p>

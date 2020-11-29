@@ -91,7 +91,7 @@
 
 	<section class="grid__container grid__container--project__details">
 		<div class="details__emblem">
-			<img class="emblem" src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+			<img class="emblem" src="<?= $kirby->url() ?>/dist/img/emblem.svg">
 		</div>
 		<div class="project__details--content">
 			<ul class="grid__container">

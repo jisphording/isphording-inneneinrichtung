@@ -4,7 +4,7 @@
     <section class="footer-top darkgray-bg">
       <p>Isphording <strong>Inneneinrichtung</strong> überträgt die Ideen <strong>moderner Architektur</strong> in zeitgenössische, kontemporäre Raumgestaltung. Damit Sie sich überall zuhause fühlen.</p>
 
-      <img class="logo" src="<?= $kirby->url('assets') ?>/img/logotype-modern-dark.png">
+      <img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-dark.webp">
     </section>
 
     <section class="footer-navigation black-bg">
@@ -42,7 +42,7 @@
         <li class="specialized">Wir sind spezialisiert auf die Fertigung <strong>individueller Einzelstücke</strong> und die Innenausstattung mit hochwertigen und <strong>exklusiven Stoffen.</strong>
         </li>
         <li class="emblem">
-          <img src="<?= $kirby->url('assets') ?>/img/emblem.svg">
+          <img src="<?= $kirby->url() ?>/dist/img/emblem.svg">
         </li>
         <li class="copyright">
             <p>Crafted <a class="date" href="<?= url() ?>"> <?= date('Y') ?></a> by <a href="http://studioisphording.com/">Studio Isphording</a></p>
