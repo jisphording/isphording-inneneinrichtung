@@ -10,7 +10,7 @@
 .insert-readmore {
     background-color: var(--color-beige-light);
     z-index: 1;
-    height: calc(var(--insert-readmore-lineheight) * 4.4);
+    height: calc(var(--insert-readmore-lineheight) * 5.5);
     overflow: hidden;
 }
 
@@ -41,6 +41,12 @@
 .insert-readmore__content em {
     width: 100%;
     color: var(--color-silver-medium);
+}
+
+@media screen and (min-width: 480px) {
+    .insert-readmore {
+        height: calc(var(--insert-readmore-lineheight) * 4.4);
+    }
 }
 
 @media screen and (min-width: 768px) {

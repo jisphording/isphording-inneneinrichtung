@@ -49,7 +49,7 @@
 .footer-top {
     font-family: --font-main-serif;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
   
 .footer-top p {
@@ -152,6 +152,10 @@
 
     .footer .logo {
         width: 15%;
+    }
+
+    .footer-top {
+        font-size: 1.5rem;
     }
 
     .footer-top p,

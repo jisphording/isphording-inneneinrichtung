@@ -20,7 +20,7 @@
 
 .header .logo {
 	float: left;
-	width: 50%;
+	width: 70%;
 }
 
 .menu__fake p {
@@ -127,6 +127,12 @@
 .menu__item-link:hover,
 .menu__item-link:focus {
 	color: var(--color-silver);
+}
+
+@media screen and (min-width: 768px) {
+	.header .logo {
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 53em) {
