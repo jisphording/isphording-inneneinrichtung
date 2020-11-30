@@ -21,9 +21,11 @@
               $file_webp = NULL;
 
               if ($extension == 'webp') {
-                $file_webp = $file -> url(); ?>
+                $file_webp = $file ?>
                 <figure class="grid__item grid__item--image">
-                <img class="grid__image" src="<?php echo $file_webp ?>" alt="<?= $project->title() ?>">
+                  <img class="grid__image" srcset="<?= $file_webp -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
+                                            src="<?= $file_webp -> url()?>" alt="<?= $project->title() ?>" loading="lazy" 
+                                            style="height:<?= floor(($file_webp -> height()) * 0.5) ?>; width:<?= floor(($file_webp -> width()) * 0.5) ?>;">
 
                 <figcaption>
                   <span class="title"><p><?= $file->title() ?></p></span>

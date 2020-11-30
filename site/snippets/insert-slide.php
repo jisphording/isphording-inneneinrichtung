@@ -1,7 +1,9 @@
 <section class="insert-slide">
     <div class="grid__item--image__insertSlide"> 
         <?php if($image = $page->image('insertSlide.webp')): ?>
-            <img class="grid__image" src="<?= $image->url() ?>" alt="">
+            <img class="grid__image" srcset="<?= $image -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
+											src="<?php echo $image->url() ?>" alt="<?= $image->content()->title() ?>" loading="lazy" 
+                                            style="height:<?= floor(($image -> height()) * 0.5) ?>; width:<?= floor(($image -> width()) * 0.5) ?>;">
         <?php endif ?>
     </div>
     <div class="grid__container--text__insertSlide">

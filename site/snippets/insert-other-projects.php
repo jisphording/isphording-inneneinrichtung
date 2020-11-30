@@ -10,7 +10,9 @@
         <!-- Fetching only the first image, will be exchanged for a cover image later. -->
         <?php if($image = $project->image()): ?>
             <figure class="grid__item grid__item--image">
-                <img class="grid__image" src="<?= $image->url() ?>" alt="<?= $project->content()->title() ?>">
+                      <img class="grid__image" srcset="<?= $image -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
+											src="<?php echo $image->url() ?>" alt="<?= $image->content()->title() ?>" loading="lazy" 
+                                            style="height:<?= floor(($image -> height()) * 0.5) ?>; width:<?= floor(($image -> width()) * 0.5) ?>;">
             </figure>
         <?php endif ?>
 
