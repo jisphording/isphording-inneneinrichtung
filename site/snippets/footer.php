@@ -9,17 +9,18 @@
 
     <section class="footer-navigation black-bg">
     <?php if ($contact = page('contact')): ?>
-      <ul class="footer-navigation__menu__main">
+      <div class="footer-navigation__menu__main">
         <ul class="footer-navigation__menu__sub">
           <li>Navigation</li>
-          <nav class="menu">
+          <li class="menu">
             <?php foreach ($site->children()->listed() as $item): ?>
             <?= $item->title()->link() ?>
             <?php endforeach ?>
-          </nav>
+          </li>
         </ul>
         <ul class="footer-navigation__menu__sub">
-          <?= page('imprint')->address()->kt() ?>
+          <li>Kontakt</li>
+          <li><?= strip_tags(page('imprint')->address()->kirbytext()) ?></li>
           <li><?= html::email(page('imprint')->email()) ?></li>
           <li><?= html::tel(page('imprint')->phone()) ?></li>
         </ul>
@@ -33,8 +34,8 @@
             <a href="<?= $social->url() ?>"><?= $social->platform() ?></a>
           <?php endforeach ?></li>
         </ul>
-      </ul>
-      <?php endif ?>
+      </div>
+    <?php endif ?>
     </section>
 
     <section class="footer-bottom silver-bg">
