@@ -4,7 +4,7 @@
     <section class="footer-top darkgray-bg">
       <p>Isphording <strong>Inneneinrichtung</strong> überträgt die Ideen <strong>moderner Architektur</strong> in zeitgenössische, kontemporäre Raumgestaltung. Damit Sie sich überall zuhause fühlen.</p>
 
-      <img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-dark.webp">
+      <img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-dark.webp" width="539" height="99" alt="Company Logotype on dark Background - Isphording Inneneinrichtung">
     </section>
 
     <section class="footer-navigation black-bg">
@@ -42,7 +42,7 @@
         <li class="specialized">Wir sind spezialisiert auf die Fertigung <strong>individueller Einzelstücke</strong> und die Innenausstattung mit hochwertigen und <strong>exklusiven Stoffen.</strong>
         </li>
         <li class="emblem">
-          <img src="<?= $kirby->url() ?>/dist/img/emblem.svg">
+          <img src="<?= $kirby->url() ?>/dist/img/emblem.svg" width="110" height="160" alt="Company Heraldic Emblem">
         </li>
         <li class="copyright">
             <p>Crafted <a class="date" href="<?= url() ?>"> <?= date('Y') ?></a> by <a href="http://studioisphording.com/">Studio Isphording</a></p>
@@ -55,6 +55,7 @@
   <?php snippet('cookies') ?>
 
 <?= js('dist/script.js', ['async' => false]) ?>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
 </body>
 </html>

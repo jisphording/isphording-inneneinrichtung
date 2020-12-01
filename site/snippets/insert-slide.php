@@ -13,7 +13,7 @@
         <div class="grid__item--bodycopy__insertSlide">
             <div class="column--01">
                 <?= $page -> InsertColumn01() -> kirbytext() ?>
-                <img class="emblem" src="<?= $kirby->url() ?>/dist/img/emblem-quadrat.svg">
+                <img class="emblem" src="<?= $kirby->url() ?>/dist/img/emblem-quadrat.svg" width="110" height="110" alt="Company Heraldic Emblem">
             </div>
             <div class="column--02"><?= $page -> InsertColumn02() -> kirbytext() ?></div>
         </div>

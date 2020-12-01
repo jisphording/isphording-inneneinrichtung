@@ -11,8 +11,18 @@
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <?= css(['dist/index.css']) ?>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+	<!-- Enable non-render-blocking quality for Google Fonts -->
+	<!-- Connect to domain of font files -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- optionally increase loading priority -->
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700&display=swap">
+	<!-- async CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
+	<!-- no-JS fallback -->
+	<noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700&display=swap">
+	</noscript>
 
 </head>
 <body class="loading">
@@ -21,7 +31,7 @@
     <header class="header">
 
 		<section id="navbar" class="navbar">
-			<a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-light.webp"></a>
+			<a class="logo" href="<?= $site->url() ?>"><img class="logo" src="<?= $kirby->url() ?>/dist/img/logotype-modern-light.webp" width="539" height="99" alt="Company Logotype - Isphording Inneneinrichtung"></a>
 
 			<div class="menu__fake">
 					<p>Men&uuml;</p>

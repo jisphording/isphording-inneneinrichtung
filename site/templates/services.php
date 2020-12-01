@@ -90,7 +90,7 @@
 				<p>1</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besprechung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besprechung.svg" width="110" height="110" alt="Service Icon - Besprechung">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service01Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -105,7 +105,7 @@
 				<p>2</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besichtigung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_besichtigung.svg" width="110" height="110" alt="Service Icon - Besichtigung">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service02Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -120,7 +120,7 @@
 				<p>3</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_stoffe.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_stoffe.svg" width="110" height="110" alt="Service Icon - Stoffe">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service03Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -135,7 +135,7 @@
 				<p>4</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_naeherei.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_naeherei.svg" width="110" height="110" alt="Service Icon - Eigene Naeherei">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service04Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -150,7 +150,7 @@
 				<p>5</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_polsterei.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_polsterei.svg" width="110" height="110" alt="Service Icon - Eigene Polsterei">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service05Titel()->kirby(); split_txt($txt, ', '); ?>
@@ -165,7 +165,7 @@
 				<p>6</p>
 			</li>
 			<li class="details__emblem">
-				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_planung.svg">
+				<img class="emblem" src="<?= $kirby->url() ?>/dist/img/service-icon_planung.svg" width="110" height="110" alt="Service Icon - Massgeschneiderte Planung">
 			</li>
 			<li class="grid__item grid__item--headline">
 				<?php $txt = $page->Service06Titel()->kirby(); split_txt($txt, ', '); ?>
