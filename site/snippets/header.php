@@ -10,6 +10,9 @@
 
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
+  <!-- Enabling a very basic Progressive Web App Manifest in case the user has no internet connection -->
+  <link rel="manifest" href="/dist/manifest.webmanifest" crossorigin="use-credentials">
+
   <?= css(['dist/index.css']) ?>
 
 	<!-- Enable non-render-blocking quality for Google Fonts -->
