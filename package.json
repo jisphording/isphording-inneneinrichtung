@@ -7,6 +7,23 @@
     "gsap": "^3.5.1",
     "imagesloaded": "^4.1.4"
   },
+  "pwaManifest": {
+    "name": "Offline Website for Isphording Inneneinrichtung GmbH",
+    "shortName": "Isphording Inneneinrichtung - Offline",
+    "startURL": "../offline",
+    "scope": "/",
+    "theme": "#ffffff",
+    "background_color": "#ffffff",
+    "generateIconOptions": {
+      "baseIcon": "./dist/img/emblem-quadrat.svg",
+      "sizes": [
+        192,
+        384,
+        512
+      ],
+      "genFavicons": true
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/*",
@@ -39,9 +56,10 @@
     "concurrently": "^5.3.0",
     "imagemin": "^7.0.1",
     "imagemin-keep-folder": "^5.3.2",
-    "imagemin-webp": "^5.1.0",
     "imagemin-svgo": "^8.0.0",
-    "parcel": "^1.12.4",
+    "imagemin-webp": "^5.1.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
     "sass": "^1.29.0"
   }
 }
