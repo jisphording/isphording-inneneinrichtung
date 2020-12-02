@@ -58,5 +58,23 @@
 <?= js('dist/script.js', ['async' => false]) ?>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
 
+<!-- Enabling a very basic Progressive Web App Service Worker in case the user has no internet connection -->
+<script>
+if ('serviceWorker' in navigator) {
+  // Before registering the service worker, wait until site has loaded
+  window.addEventListener('load', () => {
+    // Register a service worker hosted at the root of the
+    // site using the default scope.
+    navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+      console.log('Service worker registration succeeded:', registration);
+    }, /*catch*/ function(error) {
+      console.log('Service worker registration failed:', error);
+    });
+  });
+} else {
+  console.log('Service workers are not supported.');
+}
+</script>
+
 </body>
 </html>
