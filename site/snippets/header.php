@@ -10,11 +10,21 @@
 
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
+  <!-- Canonical Link to main content for this site -->
+  <link rel="canonical" href="https://isphording-inneneinrichtung.test/">
+  
+  <!-- Theme color for PWA -->
+  <meta name="theme-color" content="#d2d3d6"/>
+
+  <!-- main css file for styling -->
+  <?= css(['dist/index.css']) ?>
+
   <!-- Enabling a very basic Progressive Web App Manifest in case the user has no internet connection -->
   <link rel="manifest" href="/dist/manifest.webmanifest" crossorigin="use-credentials">
 
-  <?= css(['dist/index.css']) ?>
-
+  <!-- Manually adding the apple touch icon for PWA here -->
+  <link rel="apple-touch-icon" href="\dist\emblem-quadrat-192x192.png" />
+  
 	<!-- Enable non-render-blocking quality for Google Fonts -->
 	<!-- Connect to domain of font files -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
