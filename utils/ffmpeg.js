@@ -9,8 +9,9 @@ const fs = require('fs');
 
 // VARIABLES
 // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-const source = "F:\\JI_BODY_OF_WORK\\CLIENT_Isphording_Inneneinrichtung\\07_Videos\\Datenausgabe\\MOV\\"; // the folder of the source files that have to be converted
+const source = "F:\\JI_BODY_OF_WORK\\CLIENT_Isphording_Inneneinrichtung\\07_Videos\\Datenausgabe\\dist\\"; // the folder of the source files that have to be converted
 const target = "video/"; // the target folder to where the files are saved
+const extension = ".mp4";
 
 // FUNCTIONALITY
 // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
@@ -18,6 +19,8 @@ const target = "video/"; // the target folder to where the files are saved
 let numfiles = 0;
 // storing the file names in an array to be used in conversion for loop
 let videos = [];
+// a seperate variable to enable string manipulation/renaming
+let outname = "empty";
 
 // Touching the file system to look up name and number of files to be converted
 fs.readdir(source, (err, files) => {
@@ -36,18 +39,22 @@ fs.readdir(source, (err, files) => {
     // running a for loop that calls ffmpeg on all files in array
     for (let i = 0; i < numfiles; i++) {
         console.log("Ffmpeg conversion started on file Nr. " + i + " with file name: " + videos[i]);
+
+        // pass video name to variable
+        outname = videos[i];
+        // slice off date and underscore from filename and convert string to lowercase
+        outname = outname.slice(7).toLowerCase();
     
         // Here we are using ffmpeg-cli to convert the video files to webm
         // The way the variables are passed is a little awkward here, but it works. It is important to note howewer that the whitespaces between the arguments and the quotation marks are important so the argument string is properly recognized
         // the ffmpeg settings below are recommendations by Google
-        ffmpeg.runSync("-i " + source + videos[i] + ".mov -c:v libvpx-vp9 -pass 1 -b:v 1000K -threads 0 -speed 4 -y \
+        ffmpeg.runSync("-i " + source + videos[i] + extension + " -c:v libvpx-vp9 -pass 1 -b:v 1000K -threads 0 -speed 4 -y \
         -tile-columns 0 -frame-parallel 0 -auto-alt-ref 1 -lag-in-frames 25 -row-mt 1 \
-        -g 9999 -aq-mode 0 -an -f webm " + target + videos[i] + ".webm ");
+        -g 9999 -aq-mode 0 -an -f webm " + target + outname + ".webm ");
     
-        ffmpeg.runSync("-i " + source + videos[i] + ".mov -c:v libvpx-vp9 -pass 2 -b:v 1000K -threads 0 -speed 1 -y \
+        ffmpeg.runSync("-i " + source + videos[i] + extension + " -c:v libvpx-vp9 -pass 2 -b:v 1000K -threads 0 -speed 1 -y \
         -tile-columns 6 -frame-parallel 1 -auto-alt-ref 1 -lag-in-frames 25 -row-mt 1 \
-        -g 9999 -aq-mode 0 -c:a libopus -b:a 64k -f webm " + target + videos[i] + ".webm " );
-    
+        -g 9999 -aq-mode 0 -c:a libopus -b:a 64k -f webm " + target + outname + ".webm " );
     }
     
 });
