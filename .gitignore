@@ -3,6 +3,7 @@
 
 Icon
 .DS_Store
+ffmpeg2pass-0.log
 
 # Files meant for development only
 # ---------------
@@ -22,6 +23,7 @@ Icon
 /kirby/*
 /media/*
 /assets/img/*
+/video/*
 # !/media/index.html
 
 # Do not track Content images
