@@ -66,7 +66,9 @@ figure {
 }
 
 img,
-figure {
+figure,
+video {
+  all: unset;
   width: 100%;
   display: block; // to remove the small gap when there's whitespace between image tags
 }
