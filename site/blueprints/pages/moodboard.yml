@@ -1,0 +1,21 @@
+title: Moodboard
+icon: 🖼
+
+status:
+  draft: true
+  listed: true
+
+columns:
+  - width: 1/1
+    sections:
+      images:
+        type: files
+        layout: cards
+        template: image
+        text: "{{ file.title }}"
+        info: "{{ file.dimensions }}"
+        image:
+          ratio: 5/4
+          cover: false
+        min: 1
+        size: small
