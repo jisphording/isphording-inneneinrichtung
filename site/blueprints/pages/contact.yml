@@ -1,0 +1,69 @@
+title: Kontakt
+icon: ☎️
+
+status:
+  draft: true
+  listed: true
+
+options:
+  url: false
+  delete: false
+
+columns:
+  #main
+  main:
+    width: 2/3
+    sections:
+
+      info:
+        headline: Info
+        type: info
+        text: "Hier werden Wegbeschreibung, Anfahrt und Kontaktmöglichkeiten aufglistet."
+
+      # a simple form
+      content:
+        type: fields
+        fields:
+          intro:
+            label: Intro
+            type: text
+            text: "{{ page.Intro.kirbytext }}"
+
+          claim:
+            label: Claim
+            type: text
+            text: "{{ page.Claim.kirbytext }}"
+
+          # anfahrt
+          pagetext:
+            label: Anfahrt
+            type: textarea
+            size: large
+            text: "{{ page.Anfahrt.kirbytext }}"
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+    
+      # Contact
+      contact:
+        type: fields
+        fields:
+          address:
+            label: Address
+            type: textarea
+            text: "{{ page.Address.kirbytext }}"
+          email:
+            label: Email
+            type: email
+            text: "{{ page.Email.kirbytext }} }}"
+          phone:
+            label: Phone
+            type: tel
+            text: "{{ page.Phone.kirbytext }}"
+
+      # a list of files
+      files:
+        type: files
+        headline: Files
