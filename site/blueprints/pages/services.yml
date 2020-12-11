@@ -1,0 +1,81 @@
+title: Services
+icon: 📝
+
+status:
+  draft: true
+  listed: true
+
+options:
+  url: false
+  delete: false
+
+columns:
+  #main
+  main:
+    width: 2/3
+    sections:
+
+      info:
+        headline: Info
+        type: info
+        text: "Die Haupt-Inhalte der Homepage werden automatisch von den einzelnen Projektseiten generiert."
+
+      # a simple form
+      content:
+        type: fields
+        fields:
+          intro:
+            label: Intro
+            type: text
+            text: "{{ page.Intro.kirbytext }}"
+
+          claim:
+            label: Claim
+            type: text
+            text: "{{ page.Claim.kirbytext }}"
+
+          # main body copy
+          pagetext:
+            label: Seitentext
+            type: textarea
+            size: huge
+            text: "{{ page.PageText.kirbytext }}"
+
+      # insert at bottom of page
+      insert:
+        type: fields
+        fields:
+
+          info:
+            width: 1/1
+            headline: Insert
+            type: info
+            text: "Dieser Bereich bietet Platz für zusätzliche Informationen"
+
+          InsertCollectionProductsHeadline:
+            width: 1/1
+            label: "Insert - Zusatzinformation"
+            type: textarea
+            text: "{{ page.Insert.kirbytext }}"
+
+          InsertCollectionProductsText:
+            width: 1/2
+            label: "Insert - Spalte Links"
+            type: textarea
+            text: "{{ page.Insertcolumn01.kirbytext }}"
+
+          InsertCollectionProductsItems:
+            width: 1/2
+            label: "Insert - Spalte Rechts"
+            type: textarea
+            text: "{{ page.Insertcolumn02.kirbytext }}"
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+    
+      # a list of files
+      files:
+        type: files
+        headline: Files
