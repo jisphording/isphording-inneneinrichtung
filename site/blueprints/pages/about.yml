@@ -1,4 +1,4 @@
-title: About us
+title: About
 icon: ☎️
 
 status:
@@ -10,33 +10,43 @@ options:
   delete: false
 
 columns:
-  - width: 1/2
-    fields:
-      text:
-        label: Text
-        type: textarea
-        size: huge
+  #main
+  main:
+    width: 2/3
+    sections:
 
-  - width: 1/2
-    fields:
-      address:
-        label: Address
-        type: textarea
-      email:
-        label: Email
-        type: email
-      phone:
-        label: Phone
-        type: tel
-      social:
-        label: On the web
-        type: structure
+      info:
+        headline: Info
+        type: info
+        text: "Auf dieser Seite erzählen wir etwas mehr über uns."
+
+      # a simple form
+      content:
+        type: fields
         fields:
-          platform:
-            label: Platform
+          intro:
+            label: Intro
             type: text
-            width: 1/2
-          url:
-            label: URL
-            type: url
-            width: 1/2
+            text: "{{ page.Intro.kirbytext }}"
+
+          claim:
+            label: Claim
+            type: text
+            text: "{{ page.Claim.kirbytext }}"
+
+          # main body copy
+          pagetext:
+            label: Seitentext
+            type: textarea
+            size: huge
+            text: "{{ page.PageText.kirbytext }}"
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      # a list of files
+      files:
+        type: files
+        headline: Files
