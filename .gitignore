@@ -11,6 +11,7 @@ ffmpeg2pass-0.log
 /node_modules/*
 /*lock.json
 /TODO.md
+*.zip
 
 # Data that is only meant for deployment
 # ---------------
