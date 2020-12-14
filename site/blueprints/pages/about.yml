@@ -49,4 +49,4 @@ columns:
       # a list of files
       files:
         type: files
-        headline: Files
+        headline: Images
