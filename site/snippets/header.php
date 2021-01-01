@@ -11,7 +11,7 @@
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
 
   <!-- Canonical Link to main content for this site -->
-  <link rel="canonical" href="https://isphording-inneneinrichtung.test/">
+  <link rel="canonical" href="https://isphording-inneneinrichtung.de/">
   
   <!-- Theme color for PWA -->
   <meta name="theme-color" content="#d2d3d6"/>
